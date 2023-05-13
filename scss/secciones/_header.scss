@@ -1,0 +1,205 @@
+.desktopCabecera {
+    display: flex;
+    @include propiedades-cabecera($negro, 48px, 100%);
+    // background-color: $negro;
+    // height: 48px;
+    padding: 48px;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    z-index: 100;
+    // width: 100%;
+    text-transform: uppercase;
+
+    nav {
+        ul {
+            width: 90%;
+            @extend .flex-spaceBetween;
+            padding: 0;
+            margin: 0;
+
+            li {
+                list-style: none;
+                padding-left: 40px;
+
+
+                a {
+                    &:hover {
+                        background-color: $rojo;
+                        padding: 10px;
+                    }
+
+
+                }
+
+                .desktopCabecera__opcion-marcada {
+                    margin: auto;
+                    background-color: $rojo;
+                    padding: 10px;
+
+                    // &::after {
+                    //     // transform: translate3d(-50%, 0, 0);
+                    //     content: ' ';
+                    //     display: block;
+                    //     position: absolute;
+                    //     height: 4px;
+                    //     width: 50px;
+                    //     background: $rojo;
+                    //     text-align: center;
+                    // }
+                }
+            }
+        }
+    }
+
+    a {
+        scale: 0.45;
+        text-decoration: none;
+        color: $blanco;
+        font-size: 25px;
+
+    }
+
+    form {
+        display: flex;
+    }
+
+    .desktopCabecera__buscarContenedor {
+        padding-left: 100px;
+
+        .desktopCabecera__buscar {
+            font-size: 21px;
+            border-radius: 15px;
+            text-align: center;
+            font-family: 'Barlow Condensed', sans-serif;
+            height: 40.70px;
+        }
+    }
+
+    div {
+
+        .desktopCabecera__carrito {
+            padding: 0 125px;
+            padding-right: 50px;
+            font-size: 25px;
+        }
+    }
+}
+
+
+/* VERSION MOBILE -------  */
+@media (max-width: 576px) {
+
+    .desktopCabecera {
+        display: none;
+    }
+
+    .mobileCabecera {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px;
+        /* width: 100vw; */
+        align-items: center;
+        background-color: black;
+
+        .mobileCabecera__logo {
+            width: fit-content;
+            padding-left: 16px;
+
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+        .mobileCabecera__hamburguesa {
+            padding-right: 30px;
+            color: white;
+            font-size: 25px;
+        }
+
+        .mobileCabecera__x {
+            padding-right: 30px;
+            color: white;
+            font-size: 25px;
+            display: none;
+        }
+
+        .mobileCabecera__menuDesplegable {
+            /* width: 100%; */
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            text-align: center;
+            transition: all .5s;
+            z-index: 500;
+            /* padding-top: 20vh; */
+            padding-top: 38%;
+            padding-left: 0px;
+            left: 0px;
+            text-transform: uppercase;
+
+            li {
+                display: none;
+                line-height: 30px;
+                margin: 50px auto;
+                transition: all .5s;
+                height: fit-content;
+
+                a {
+                    color: white;
+                    font-size: 35px;
+                    font-weight: 600;
+                    text-decoration: none;
+                }
+
+                .menuDesplegable__opcion-marcada {
+                    background-color: $rojo;
+                    padding: 10px;
+                }
+
+            }
+        }
+
+
+
+
+
+        #check {
+            display: none;
+
+            &:checked~.mobileCabecera__menuDesplegable {
+                display: block;
+                position: fixed;
+                margin: 0;
+                /* height: 110vh; */
+                height: 100%;
+                top: 0;
+            }
+
+            &:checked~.mobileCabecera__x {
+                display: block;
+                position: fixed;
+                z-index: 600;
+                padding-left: 270px;
+            }
+        }
+
+
+
+        #check:checked~.mobileCabecera__menuDesplegable li {
+            display: block;
+        }
+
+        #check:checked~.mobile__cabecera-logo {
+            position: fixed;
+            z-index: 600;
+        }
+    }
+
+
+
+
+
+
+}

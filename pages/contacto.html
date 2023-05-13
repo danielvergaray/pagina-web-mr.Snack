@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="formulario, contacto, central reclamos, opinion, mensaje">
+    <meta name="description" content="formulario de atencion, central de reclamos, sugerencias, mensajeria">
+    <title>Contacto | Mr. snack</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/15199fa674.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../imagenes/index/logoNegro.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <!----------------- cabecera mobile ------------------------>
+        <div class="mobileCabecera">
+            <a class="mobileCabecera__logo" href="../index.html"><img src="../imagenes/index/logo.png" alt="logo"></a>
+            <input type="checkbox" id="check">
+            <label for="check" class="mobileCabecera__hamburguesa">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <label for="check" class="mobileCabecera__x">
+                <i class="fa-solid fa-xmark"></i>
+            </label>
+            <!-- <a class="mobile__carrito" href="#"><i class="fa-solid fa-cart-shopping"></i></a> -->
+            <ul class="mobileCabecera__menuDesplegable">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./saludables.html">Saludables</a></li>
+                <li><a href="./almendras.html">Combos</a> </li>
+                <li><a href="./almendras.html">almendras</a> </li>
+                <li><a class="menuDesplegable__opcion-marcada" href="./contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+
+        <!----------------- cabecera mobile ------------------------------>
+
+        <!----------------- cabecera desktop ------------------------>
+        <div class="desktopCabecera">
+            <a href="../index.html"><img src="../imagenes/index/logo.png" alt="logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="#">Dulces</a></li>
+                    <li><a href="#">Salados</a></li>
+                    <li><a href="./saludables.html">Saludables</a></li>
+                    <li><a href="./combos.html">Combos</a></li>
+                    <li><a href="./almendras.html">Almendras</a></li>
+                </ul>
+            </nav>
+
+            <form class="desktopCabecera__buscarContenedor" action="" method="post">
+                <label for="buscar"></label>
+                <input type="text" class="desktopCabecera__buscar" placeholder="¿Que deseas buscar?">
+            </form>
+            <div>
+                <a class="desktopCabecera__carrito" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </div>
+        <!--------------- cabecera desktop --------------------->
+    </header>
+    <main class="contactoContainer">
+        <div class="contactoContainer__columnaIzquierda">
+            <p>Para nosotros en Mr. Snack es muy
+                importante la opinion de nuestros clientes,
+                por eso te dejamos nuestros canales de comunicacion,
+                sientete libre de expresarnos tus ideas</p>
+        </div>
+        <div class="contactoContainer__central">
+            <form class="contactoContainer__columnaCentral" action="" method="post">
+                <h1>Formulario de atención</h1>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" placeholder="Escriba su nombre">
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" placeholder="Escriba su apellido">
+                <label for="email">Correo electronico</label>
+                <input type="email" name="email" placeholder="Escriba su correo electronico">
+                <label for="">Mensaje o Sugerencia</label>
+                <input type="text" name="mensaje" class="mensaje">
+                <input type="submit" value="Enviar" class="botonFormulario" name="boton">
+            </form>
+        </div>
+        <div class="contactoContainer__columnaDerecha">
+            <div>
+                <h2>Tambien puedes comunicarte con nosotros por los siguientes medios: </h2>
+            </div>
+            <div>
+                <h3>Central de reclamos</h3><i class="fa-solid fa-phone-volume"></i>
+            </div>
+            <p>xx-xxx-xxx</p>
+            <div>
+                <h3>Mensajeria por whatsapp</h3><i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <p>xx-xxx-xxx</p>
+        </div>
+
+    </main>
+
+    <footer>
+        <!--------------------Footer desktop --------------------->
+        <div class="footerContainer">
+            <h2>Conoce nuestras redes</h2>
+            <div class="footerContainer__redes">
+                <a href="#"><i class="fa-brands fa-instagram" data-aos="fade-up" data-aos-duration="1000"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f" data-aos="fade-down" data-aos-duration="1000"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok" data-aos="fade-up" data-aos-duration="1000"></i></a>
+            </div>
+            <div class="footerContainer__contacto">
+                <a class="desktopfooter__opcion-marcada" href="./contacto.html">Contactanos</a>
+                <a href="#">Politica</a>
+                <a href="#">Ayuda</a>
+                <a href="#">Reporta un problema</a>
+            </div>
+        </div>
+        <!--------------------Footer desktop --------------------->
+
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

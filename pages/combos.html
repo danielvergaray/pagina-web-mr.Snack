@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="combos, cine, fitness, reunion, dulces, salados, chocolates, frutos secos">
+    <meta name="description" content="promociones, combos, saludable, carrito, snacks, saludables">
+    <title>Combos | Mr. snack</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/15199fa674.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../imagenes/index/logoNegro.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <!----------------- cabecera mobile ------------------------>
+        <div class="mobileCabecera">
+            <a class="mobileCabecera__logo" href="../index.html"><img src="../imagenes/index/logo.png" alt="logo"></a>
+            <input type="checkbox" id="check">
+            <label for="check" class="mobileCabecera__hamburguesa">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <label for="check" class="mobileCabecera__x">
+                <i class="fa-solid fa-xmark"></i>
+            </label>
+            <ul class="mobileCabecera__menuDesplegable">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./saludables.html">Saludables</a></li>
+                <li><a class="menuDesplegable__opcion-marcada" href="./combos.html">Combos</a> </li>
+                <li><a href="./almendras.html">almendras</a> </li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+
+        <!----------------- cabecera mobile ------------------------------>
+
+        <!----------------- cabecera desktop ------------------------>
+        <div class="desktopCabecera">
+            <a href="../index.html"><img src="../imagenes/index/logo.png" alt="logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="#">Dulces</a></li>
+                    <li><a href="#">Salados</a></li>
+                    <li><a href="./saludables.html">Saludables</a></li>
+                    <li><a class="desktopCabecera__opcion-marcada" href="./combos.html">Combos</a></li>
+                    <li><a href="./almendras.html">Almendras</a></li>
+                </ul>
+            </nav>
+
+            <form class="desktopCabecera__buscarContenedor" action="" method="post">
+                <label for="buscar"></label>
+                <input type="text" class="desktopCabecera__buscar" placeholder="¿Que deseas buscar?">
+            </form>
+            <div>
+                <a class="desktopCabecera__carrito" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </div>
+        <!--------------- cabecera desktop --------------------->
+    </header>
+    <main class="combosContainer">
+        <div class="combosContainer__titulo">
+            <h1>Combos</h1>
+        </div>
+        <div class="combosContainer__hero">
+            <div class="combosContainer__producto" data-aos="fade-up" data-aos-duration="500">
+                <a href="#"><img src="../imagenes/combos/comboFit.png" alt="imagen combo fit"></a>
+                <h2>Combo Fit</h2>
+                <p>Incluye: Almendras | Pecanas | Nueces o Castañas</p>
+                <div>
+                    <h3>S/ 32</h3>
+                </div>
+                <button>Carrito</button>
+            </div>
+            <div class="combosContainer__producto" data-aos="fade-up" data-aos-duration="500">
+                <a href="#"><img src="../imagenes/combos/comboCine.png" alt="imagen combo cine"></a>
+                <h2>Combo Cine</h2>
+                <p>Incluye: Papas | Ambrosia | Chocopasas o Chocomani</p>
+                <div>
+                    <h3>S/ 15</h3>
+                </div>
+                <button>Carrito</button>
+            </div>
+            <div class="combosContainer__producto" data-aos="fade-up" data-aos-duration="500">
+                <a href="#"><img src="../imagenes/combos/comboReu.png" alt="imagen combo reu"></a>
+                <h2>Combo Reu</h2>
+                <p>Incluye: Chifles | Tejanas | Chocopasas | Mani salado | Chicharron</p>
+                <div>
+                    <h3>S/ 25</h3>
+                </div>
+                <button>Carrito</button>
+            </div>
+
+        </div>
+
+    </main>
+    <footer>
+        <!--------------------Footer desktop --------------------->
+        <div class="footerContainer">
+            <h2>Conoce nuestras redes</h2>
+            <div class="footerContainer__redes">
+                <a href="#"><i class="fa-brands fa-instagram" data-aos="fade-up" data-aos-duration="1000"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f" data-aos="fade-down" data-aos-duration="1000"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok" data-aos="fade-up" data-aos-duration="1000"></i></a>
+            </div>
+            <div class="footerContainer__contacto">
+                <a href="./contacto.html">Contactanos</a>
+                <a href="#">Politica</a>
+                <a href="#">Ayuda</a>
+                <a href="#">Reporta un problema</a>
+            </div>
+        </div>
+        <!--------------------Footer desktop --------------------->
+
+
+
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

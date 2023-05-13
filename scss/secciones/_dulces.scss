@@ -1,0 +1,94 @@
+.dulcesContainer {
+    padding-top: var(--padding-top);
+    /*Para que la info no quede debajo de la navBar */
+    display: grid;
+    grid-template-columns: 15% 85%;
+
+
+    .dulcesContainer__barraIzquierda {
+        grid-column: 1;
+        padding-top: 50px;
+        padding-left: 20px;
+        background-color: $beige;
+        
+
+        ul {
+            list-style: none;
+            line-height: 40px;
+            font-size: 20px;
+        
+        }
+    }
+
+    .dulcesContainer__productos {
+
+        img {
+            // width: 280px;
+            width: 100%;
+            // height: 230px;
+
+        }
+
+        .dulcesContainer__primeraFila,
+        .dulcesContainer__segundaFila {
+
+            grid-column: 2;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 50px 10px 40px 10px;
+
+
+            .dulcesContainer__productos--item {
+                // width: 300px;
+                width: 20%;
+                height: 606px;
+                border: 1px #d3d3d3 solid;
+                text-align: center;
+
+                h2 {
+                    padding-top: 20%;
+                    font-size: 25px;
+                    width: 80%;
+                    margin: auto;
+                }
+
+                p {
+                    padding-top: 20%;
+                    font-size: 18px;
+                    color: $rojo;
+                }
+
+                .dulcesContainer__productos--boton {
+                    display: flex;
+                    justify-content: center;
+                    padding-top: 20px;
+
+                    button {
+                        font-size: 20px;
+                        
+                        padding: 16px;
+                        background-color: $anaranjado;
+                        border-radius: var(--radio-border);
+                        border: 0px;
+                        cursor: pointer;
+                        text-transform: uppercase;
+                        font-family: 'Barlow Condensed', sans-serif;
+                        border-color: $anaranjado;
+
+                        &:hover {
+                            opacity: 0.8;
+                        }
+                    }
+                }
+            }
+        }
+
+        .dulcesContainer__primeraFila {
+            padding-bottom: 0;
+        }
+
+
+
+
+    }
+}
