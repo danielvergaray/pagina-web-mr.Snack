@@ -1,11 +1,11 @@
-.dulcesContainer {
+.saladosContainer {
     padding-top: var(--padding-top);
     /*Para que la info no quede debajo de la navBar */
     display: grid;
     grid-template-columns: 15% 85%;
 
 
-    .dulcesContainer__barraIzquierda {
+    .saladosContainer__barraIzquierda {
         grid-column: 1;
         padding-top: 50px;
         padding-left: 20px;
@@ -20,7 +20,7 @@
         }
     }
 
-    .dulcesContainer__productos {
+    .saladosContainer__productos {
 
         img {
             // width: 280px;
@@ -30,11 +30,14 @@
         }
         .imagen230{
             width: 230px;
-            
+        }
+        .imagen170{
+            width: 170px;
+            margin-top: 13px;
         }
 
-        .dulcesContainer__primeraFila,
-        .dulcesContainer__segundaFila {
+        .saladosContainer__primeraFila,
+        .saladosContainer__segundaFila {
 
             grid-column: 2;
             display: flex;
@@ -42,7 +45,7 @@
             padding: 50px 10px 40px 10px;
 
 
-            .dulcesContainer__productos--item {
+            .saladosContainer__productos--item {
                 // width: 300px;
                 @extend .propiedades-productos-items;
 
@@ -59,10 +62,12 @@
                     color: $rojo;
                 }
 
-                .dulcesContainer__productos--boton {
+                .saladosContainer__productos--boton {
                     display: flex;
                     justify-content: center;
-                    padding-top: 20px;
+                    position: relative;
+                    top: 10%;
+                    
 
                     button {
                         font-size: 20px;
@@ -84,7 +89,7 @@
             }
         }
 
-        .dulcesContainer__primeraFila {
+        .saladosContainer__primeraFila {
             padding-bottom: 0;
         }
 
