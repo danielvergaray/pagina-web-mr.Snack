@@ -727,7 +727,8 @@ body {
       .dulcesContainer .dulcesContainer__productos .dulcesContainer__segundaFila .dulcesContainer__productos--item p {
         font-size: 20px;
         color: red;
-        grid-row: 3; }
+        grid-row: 3;
+        margin: auto; }
       .dulcesContainer .dulcesContainer__productos .dulcesContainer__primeraFila .dulcesContainer__productos--item .dulcesContainer__productos--boton,
       .dulcesContainer .dulcesContainer__productos .dulcesContainer__segundaFila .dulcesContainer__productos--item .dulcesContainer__productos--boton {
         justify-content: center;
