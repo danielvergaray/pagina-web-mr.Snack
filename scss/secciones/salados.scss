@@ -31,11 +31,13 @@
         }
         .imagen170{
             width: 170px;
-            margin-top: 13px;
+            // margin-top: 13px;
+            padding-top: 10px;
         }
         .imagen160{
             width: 160px;
-            margin-top: 7px;
+            padding-top: 10px;
+            
         }
 
         .saladosContainer__primeraFila,
@@ -53,12 +55,17 @@
                 grid-template-rows: 40% 20% 10% 30%;
                 a{
                     grid-row: 1;
+                    text-decoration: none;
+                    color: black;
+                    img{
+                        height: 222px;
+                    }
                 }
                 h2 {
                     font-size: 25px;
                     grid-row: 2;
                     text-transform: capitalize;
-                    padding: 10px 12px 0px;
+                    padding: 20px 12px 0px;
                     margin: 0;
                     
                 }

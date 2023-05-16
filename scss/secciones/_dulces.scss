@@ -49,13 +49,15 @@
                 grid-template-rows: 40% 20% 10% 30%;
                 a{
                     grid-row: 1;
+                    text-decoration: none;
+                    color: black;
                 }
                 h2 {
                     
                     font-size: 25px;
                     grid-row: 2;
                     text-transform: capitalize;
-                    padding: 10px 12px 0px;
+                    padding: 20px 12px 0px;
                     margin: 0;
                     
                 }
