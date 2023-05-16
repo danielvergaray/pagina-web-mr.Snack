@@ -27,7 +27,7 @@ body {
 .dulcesContainer .dulcesContainer__productos .dulcesContainer__segundaFila .dulcesContainer__productos--item, .saladosContainer .saladosContainer__productos .saladosContainer__primeraFila .saladosContainer__productos--item,
 .saladosContainer .saladosContainer__productos .saladosContainer__segundaFila .saladosContainer__productos--item {
   width: 20%;
-  height: 606px;
+  height: 600px;
   border: 1px #d3d3d3 solid;
   text-align: center; }
 
@@ -700,43 +700,51 @@ body {
   .dulcesContainer .dulcesContainer__productos img {
     width: 100%; }
   .dulcesContainer .dulcesContainer__productos .imagen230 {
-    width: 230px; }
+    width: 200px; }
   .dulcesContainer .dulcesContainer__productos .dulcesContainer__primeraFila,
   .dulcesContainer .dulcesContainer__productos .dulcesContainer__segundaFila {
     grid-column: 2;
     display: flex;
     justify-content: space-evenly;
     padding: 50px 10px 40px 10px; }
-    .dulcesContainer .dulcesContainer__productos .dulcesContainer__primeraFila .dulcesContainer__productos--item h2,
-    .dulcesContainer .dulcesContainer__productos .dulcesContainer__segundaFila .dulcesContainer__productos--item h2 {
-      padding-top: 20%;
-      font-size: 25px;
-      width: 80%;
-      margin: auto; }
-    .dulcesContainer .dulcesContainer__productos .dulcesContainer__primeraFila .dulcesContainer__productos--item p,
-    .dulcesContainer .dulcesContainer__productos .dulcesContainer__segundaFila .dulcesContainer__productos--item p {
-      padding-top: 20%;
-      font-size: 18px;
-      color: red; }
-    .dulcesContainer .dulcesContainer__productos .dulcesContainer__primeraFila .dulcesContainer__productos--item .dulcesContainer__productos--boton,
-    .dulcesContainer .dulcesContainer__productos .dulcesContainer__segundaFila .dulcesContainer__productos--item .dulcesContainer__productos--boton {
-      display: flex;
-      justify-content: center;
-      padding-top: 20px; }
-      .dulcesContainer .dulcesContainer__productos .dulcesContainer__primeraFila .dulcesContainer__productos--item .dulcesContainer__productos--boton button,
-      .dulcesContainer .dulcesContainer__productos .dulcesContainer__segundaFila .dulcesContainer__productos--item .dulcesContainer__productos--boton button {
+    .dulcesContainer .dulcesContainer__productos .dulcesContainer__primeraFila .dulcesContainer__productos--item,
+    .dulcesContainer .dulcesContainer__productos .dulcesContainer__segundaFila .dulcesContainer__productos--item {
+      display: grid;
+      grid-template-rows: 40% 20% 10% 30%; }
+      .dulcesContainer .dulcesContainer__productos .dulcesContainer__primeraFila .dulcesContainer__productos--item a,
+      .dulcesContainer .dulcesContainer__productos .dulcesContainer__segundaFila .dulcesContainer__productos--item a {
+        grid-row: 1; }
+      .dulcesContainer .dulcesContainer__productos .dulcesContainer__primeraFila .dulcesContainer__productos--item h2,
+      .dulcesContainer .dulcesContainer__productos .dulcesContainer__segundaFila .dulcesContainer__productos--item h2 {
+        font-size: 25px;
+        grid-row: 2;
+        text-transform: capitalize;
+        padding: 10px 12px 0px;
+        margin: 0; }
+      .dulcesContainer .dulcesContainer__productos .dulcesContainer__primeraFila .dulcesContainer__productos--item p,
+      .dulcesContainer .dulcesContainer__productos .dulcesContainer__segundaFila .dulcesContainer__productos--item p {
         font-size: 20px;
-        padding: 16px;
-        background-color: orangered;
-        border-radius: var(--radio-border);
-        border: 0px;
-        cursor: pointer;
-        text-transform: uppercase;
-        font-family: 'Barlow Condensed', sans-serif;
-        border-color: orangered; }
-        .dulcesContainer .dulcesContainer__productos .dulcesContainer__primeraFila .dulcesContainer__productos--item .dulcesContainer__productos--boton button:hover,
-        .dulcesContainer .dulcesContainer__productos .dulcesContainer__segundaFila .dulcesContainer__productos--item .dulcesContainer__productos--boton button:hover {
-          opacity: 0.8; }
+        color: red;
+        grid-row: 3; }
+      .dulcesContainer .dulcesContainer__productos .dulcesContainer__primeraFila .dulcesContainer__productos--item .dulcesContainer__productos--boton,
+      .dulcesContainer .dulcesContainer__productos .dulcesContainer__segundaFila .dulcesContainer__productos--item .dulcesContainer__productos--boton {
+        justify-content: center;
+        grid-row: 4;
+        margin: auto; }
+        .dulcesContainer .dulcesContainer__productos .dulcesContainer__primeraFila .dulcesContainer__productos--item .dulcesContainer__productos--boton button,
+        .dulcesContainer .dulcesContainer__productos .dulcesContainer__segundaFila .dulcesContainer__productos--item .dulcesContainer__productos--boton button {
+          font-size: 20px;
+          padding: 16px;
+          background-color: orangered;
+          border-radius: var(--radio-border);
+          border: 0px;
+          cursor: pointer;
+          text-transform: uppercase;
+          font-family: 'Barlow Condensed', sans-serif;
+          border-color: orangered; }
+          .dulcesContainer .dulcesContainer__productos .dulcesContainer__primeraFila .dulcesContainer__productos--item .dulcesContainer__productos--boton button:hover,
+          .dulcesContainer .dulcesContainer__productos .dulcesContainer__segundaFila .dulcesContainer__productos--item .dulcesContainer__productos--boton button:hover {
+            opacity: 0.8; }
   .dulcesContainer .dulcesContainer__productos .dulcesContainer__primeraFila {
     padding-bottom: 0; }
 
@@ -761,43 +769,53 @@ body {
   .saladosContainer .saladosContainer__productos .imagen170 {
     width: 170px;
     margin-top: 13px; }
+  .saladosContainer .saladosContainer__productos .imagen160 {
+    width: 160px;
+    margin-top: 7px; }
   .saladosContainer .saladosContainer__productos .saladosContainer__primeraFila,
   .saladosContainer .saladosContainer__productos .saladosContainer__segundaFila {
     grid-column: 2;
     display: flex;
     justify-content: space-evenly;
     padding: 50px 10px 40px 10px; }
-    .saladosContainer .saladosContainer__productos .saladosContainer__primeraFila .saladosContainer__productos--item h2,
-    .saladosContainer .saladosContainer__productos .saladosContainer__segundaFila .saladosContainer__productos--item h2 {
-      padding-top: 20%;
-      font-size: 25px;
-      width: 80%;
-      margin: auto; }
-    .saladosContainer .saladosContainer__productos .saladosContainer__primeraFila .saladosContainer__productos--item p,
-    .saladosContainer .saladosContainer__productos .saladosContainer__segundaFila .saladosContainer__productos--item p {
-      padding-top: 20%;
-      font-size: 18px;
-      color: red; }
-    .saladosContainer .saladosContainer__productos .saladosContainer__primeraFila .saladosContainer__productos--item .saladosContainer__productos--boton,
-    .saladosContainer .saladosContainer__productos .saladosContainer__segundaFila .saladosContainer__productos--item .saladosContainer__productos--boton {
-      display: flex;
-      justify-content: center;
-      position: relative;
-      top: 10%; }
-      .saladosContainer .saladosContainer__productos .saladosContainer__primeraFila .saladosContainer__productos--item .saladosContainer__productos--boton button,
-      .saladosContainer .saladosContainer__productos .saladosContainer__segundaFila .saladosContainer__productos--item .saladosContainer__productos--boton button {
+    .saladosContainer .saladosContainer__productos .saladosContainer__primeraFila .saladosContainer__productos--item,
+    .saladosContainer .saladosContainer__productos .saladosContainer__segundaFila .saladosContainer__productos--item {
+      display: grid;
+      grid-template-rows: 40% 20% 10% 30%; }
+      .saladosContainer .saladosContainer__productos .saladosContainer__primeraFila .saladosContainer__productos--item a,
+      .saladosContainer .saladosContainer__productos .saladosContainer__segundaFila .saladosContainer__productos--item a {
+        grid-row: 1; }
+      .saladosContainer .saladosContainer__productos .saladosContainer__primeraFila .saladosContainer__productos--item h2,
+      .saladosContainer .saladosContainer__productos .saladosContainer__segundaFila .saladosContainer__productos--item h2 {
+        font-size: 25px;
+        grid-row: 2;
+        text-transform: capitalize;
+        padding: 10px 12px 0px;
+        margin: 0; }
+      .saladosContainer .saladosContainer__productos .saladosContainer__primeraFila .saladosContainer__productos--item p,
+      .saladosContainer .saladosContainer__productos .saladosContainer__segundaFila .saladosContainer__productos--item p {
         font-size: 20px;
-        padding: 16px;
-        background-color: orangered;
-        border-radius: var(--radio-border);
-        border: 0px;
-        cursor: pointer;
-        text-transform: uppercase;
-        font-family: 'Barlow Condensed', sans-serif;
-        border-color: orangered; }
-        .saladosContainer .saladosContainer__productos .saladosContainer__primeraFila .saladosContainer__productos--item .saladosContainer__productos--boton button:hover,
-        .saladosContainer .saladosContainer__productos .saladosContainer__segundaFila .saladosContainer__productos--item .saladosContainer__productos--boton button:hover {
-          opacity: 0.8; }
+        color: red;
+        grid-row: 3; }
+      .saladosContainer .saladosContainer__productos .saladosContainer__primeraFila .saladosContainer__productos--item .saladosContainer__productos--boton,
+      .saladosContainer .saladosContainer__productos .saladosContainer__segundaFila .saladosContainer__productos--item .saladosContainer__productos--boton {
+        justify-content: center;
+        grid-row: 4;
+        margin: auto; }
+        .saladosContainer .saladosContainer__productos .saladosContainer__primeraFila .saladosContainer__productos--item .saladosContainer__productos--boton button,
+        .saladosContainer .saladosContainer__productos .saladosContainer__segundaFila .saladosContainer__productos--item .saladosContainer__productos--boton button {
+          font-size: 20px;
+          padding: 16px;
+          background-color: orangered;
+          border-radius: var(--radio-border);
+          border: 0px;
+          cursor: pointer;
+          text-transform: uppercase;
+          font-family: 'Barlow Condensed', sans-serif;
+          border-color: orangered; }
+          .saladosContainer .saladosContainer__productos .saladosContainer__primeraFila .saladosContainer__productos--item .saladosContainer__productos--boton button:hover,
+          .saladosContainer .saladosContainer__productos .saladosContainer__segundaFila .saladosContainer__productos--item .saladosContainer__productos--boton button:hover {
+            opacity: 0.8; }
   .saladosContainer .saladosContainer__productos .saladosContainer__primeraFila {
     padding-bottom: 0; }
 
