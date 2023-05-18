@@ -32,6 +32,7 @@
                 width: 90%;
                 padding: 32px;
             }
+            
         }
     }
 
@@ -144,6 +145,9 @@
                 img{
                     width: 252px;
                     height: 220px;
+                    &&:hover{
+                        scale: 1.5;
+                    }
                     
                 }
                 .imagen230{
@@ -158,6 +162,9 @@
                     width: 160px;
                     padding-top: 10px;
                     
+                }
+                .saludables__itemsImagen{
+                    width: 210px;
                 }
             }
 
