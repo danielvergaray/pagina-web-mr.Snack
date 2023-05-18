@@ -1130,6 +1130,14 @@ body {
       .producto__recomendaciones .producto__recomendaciones--container .producto__recomendaciones--item a img {
         width: 252px;
         height: 220px; }
+      .producto__recomendaciones .producto__recomendaciones--container .producto__recomendaciones--item a .imagen230 {
+        width: 230px; }
+      .producto__recomendaciones .producto__recomendaciones--container .producto__recomendaciones--item a .imagen170 {
+        width: 170px;
+        padding-top: 10px; }
+      .producto__recomendaciones .producto__recomendaciones--container .producto__recomendaciones--item a .imagen160 {
+        width: 160px;
+        padding-top: 10px; }
     .producto__recomendaciones .producto__recomendaciones--container .producto__recomendaciones--item h3 {
       font-size: 17px;
       grid-row: 2;
