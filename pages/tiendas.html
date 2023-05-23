@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="formulario, contacto, central reclamos, opinion, mensaje">
-    <meta name="description" content="formulario de atencion, central de reclamos, sugerencias, mensajeria">
-    <title>Contacto | Mr. snack</title>
+    <meta name="keywords" content="combos, cine, fitness, reunion, dulces, salados, chocolates, frutos secos">
+    <meta name="description" content="promociones, combos, saludable, carrito, snacks, saludables">
+    <title>Nuestras Tiendas | Mr. snack</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&display=swap" rel="stylesheet">
@@ -29,13 +29,12 @@
             <label for="check" class="mobileCabecera__x">
                 <i class="fa-solid fa-xmark"></i>
             </label>
-            <!-- <a class="mobile__carrito" href="#"><i class="fa-solid fa-cart-shopping"></i></a> -->
             <ul class="mobileCabecera__menuDesplegable">
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="./saludables.html">Saludables</a></li>
-                <li><a href="./almendras.html">Combos</a> </li>
+                <li><a class="menuDesplegable__opcion-marcada" href="./combos.html">Combos</a> </li>
                 <li><a href="./almendras.html">almendras</a> </li>
-                <li><a class="menuDesplegable__opcion-marcada" href="./contacto.html">Contacto</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
             </ul>
         </div>
 
@@ -46,11 +45,10 @@
             <a href="../index.html"><img src="../imagenes/index/logo.png" alt="logo"></a>
             <nav>
                 <ul>
-                    <li><a href="#">Dulces</a></li>
-                    <li><a href="#">Salados</a></li>
+                    <li><a href="../pages/dulces.html">Dulces</a></li>
+                    <li><a href="../pages/salados.html">Salados</a></li>
                     <li><a href="./saludables.html">Saludables</a></li>
-                    <li><a href="./combos.html">Combos</a></li>
-                    <li><a href="./almendras.html">Almendras</a></li>
+                    <li><a href="./combos.html">Combos</a></li>    
                 </ul>
             </nav>
 
@@ -64,43 +62,68 @@
         </div>
         <!--------------- cabecera desktop --------------------->
     </header>
-    <main class="contactoContainer">
-        <div class="contactoContainer__columnaIzquierda">
-            <p>Para nosotros en Mr. Snack es muy
-                importante la opinion de nuestros clientes,
-                por eso te dejamos nuestros canales de comunicacion,
-                sientete libre de expresarnos tus ideas</p>
+    <main class="tiendasContainer">
+        <div class="tiendasContainer__titulo">
+            <h1>Encuentra tu tienda más cercana</h1>
         </div>
-        <div class="contactoContainer__central">
-            <form class="contactoContainer__columnaCentral" action="" method="post">
-                <h1>Formulario de atención</h1>
-                <label for="nombre">Nombre</label>
-                <input type="text" name="nombre" placeholder="Escriba su nombre">
-                <label for="apellido">Apellido</label>
-                <input type="text" name="apellido" placeholder="Escriba su apellido">
-                <label for="email">Correo electronico</label>
-                <input type="email" name="email" placeholder="Escriba su correo electronico">
-                <label for="">Mensaje o Sugerencia</label>
-                <input type="text" name="mensaje" class="mensaje">
-                <input type="submit" value="Enviar" class="botonFormulario" name="boton">
-            </form>
-        </div>
-        <div class="contactoContainer__columnaDerecha">
-            <div>
-                <h2>Tambien puedes comunicarte con nosotros por los siguientes medios: </h2>
+        <div class="tiendasContainer__hero">
+            <div class="tiendasContainer__producto" data-aos="fade-up" data-aos-duration="500">
+                <a href="#"><img src="../imagenes/tienda/tienda1.jpg" alt="imagen combo fit"></a>
+                <h2>Sede Miraflores</h2>
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i></li>
+                    <li> Av. José Pardo 879, Lima 15074</li>
+                </ul>
+                <ul>
+                    <li><i class="fa-solid fa-phone"></i></li>
+                    <li> +51 01  370 1925</li>
+                </ul>
+                <ul>
+                    <li><i class="fa-solid fa-clock"></i></li>
+                    <li> Lunes a Viernes 9:30am - 9:00pm  Sábados 10:00 a.m. hasta 7:00 p.m</li>
+                </ul>
+                
+                
             </div>
-            <div>
-                <h3>Central de reclamos</h3><i class="fa-solid fa-phone-volume"></i>
+            <div class="tiendasContainer__producto" data-aos="fade-up" data-aos-duration="500">
+                <a href="#"><img src="../imagenes/tienda/tienda4.jpg" alt="imagen combo cine"></a>
+                <h2>Sede San Isidro</h2>
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i></li>
+                    <li> C. Amador Merino Reyna 320, San Isidro 15046</li>
+                </ul>
+                <ul>
+                    <li><i class="fa-solid fa-phone"></i></li>
+                    <li> +51 01  380 8570</li>
+                </ul>
+                <ul>
+                    <li><i class="fa-solid fa-clock"></i></li>
+                    <li> Lunes a Viernes 9:30am - 9:00pm  Sábados 10:00 a.m. hasta 7:00 p.m</li>
+                </ul>
+                
+                
             </div>
-            <p>xx-xxx-xxx</p>
-            <div>
-                <h3>Mensajeria por whatsapp</h3><i class="fa-brands fa-whatsapp"></i>
+            <div class="tiendasContainer__producto" data-aos="fade-up" data-aos-duration="500">
+                <a href="#"><img src="../imagenes/tienda/tienda3.jpg" alt="imagen combo reu"></a>
+                <h2>Sede Surco</h2>
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i></li>
+                    <li> Av Surco 659, Santiago de Surco 15049</li>
+                </ul>
+                <ul>
+                    <li><i class="fa-solid fa-phone"></i></li>
+                    <li> +51 01  390 8517</li>
+                </ul>
+                <ul>
+                    <li><i class="fa-solid fa-clock"></i></li>
+                    <li> Lunes a Viernes 9:30am - 9:00pm  Sábados 10:00 a.m. hasta 7:00 p.m</li>
+                </ul>
+                
             </div>
-            <p>xx-xxx-xxx</p>
+
         </div>
 
     </main>
-
     <footer>
         <!--------------------Footer desktop --------------------->
         <div class="footerContainer">
@@ -111,13 +134,15 @@
                 <a href="#"><i class="fa-brands fa-tiktok" data-aos="fade-up" data-aos-duration="1000"></i></a>
             </div>
             <div class="footerContainer__contacto">
-                <a class="desktopfooter__opcion-marcada" href="./contacto.html">Contactanos</a>
+                <a href="./contacto.html">Contactanos</a>
                 <a href="#">Politica</a>
-                <a href="./tiendas.html">Tiendas</a>
-                <a href="#">Reporta un problema</a>
+                <a class="desktopfooter__opcion-marcada" href="./tiendas.html">Tiendas</a>
+                <a href="./tiendas.html">Reporta un problema</a>
             </div>
         </div>
         <!--------------------Footer desktop --------------------->
+
+
 
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
