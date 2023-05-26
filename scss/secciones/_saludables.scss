@@ -1,6 +1,6 @@
 .heroSaludables {
     background:
-        linear-gradient(rgba(0, 0, 0, 0.6), transparent),
+        linear-gradient(rgba(0, 0, 0, 0.9), transparent),
         url("../imagenes/saludables/frutosSecos.jpg");
     background-position: center center;
     background-repeat: no-repeat;
@@ -8,32 +8,32 @@
     /* height: 100vh; */
     height: 15rem;
 
-    .heroSaludables__texto {
+    // .heroSaludables__texto {
 
-        // width: 70%;
-        line-height: 97px;
-        // display: flex;
-        // align-items: center;
+    //     // width: 70%;
+    //     line-height: 97px;
+    //     // display: flex;
+    //     // align-items: center;
 
-        // height: 51rem;
-        color: $blanco;
-        text-align: center;
-        position: absolute;
-        padding: 0;
-        top: 40%;
-        left: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
+    //     // height: 51rem;
+    //     color: $blanco;
+    //     text-align: center;
+    //     position: absolute;
+    //     padding: 0;
+    //     top: 40%;
+    //     left: 0;
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: center;
+    //     width: 100%;
 
 
-        p {
-            font-size: 60px;
-            // width: 80%;
-            width: 65%;
-        }
-    }
+    //     p {
+    //         font-size: 60px;
+    //         // width: 80%;
+    //         width: 65%;
+    //     }
+    // }
 }
 
 .saludablesContainer {
