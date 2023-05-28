@@ -1348,8 +1348,6 @@ body {
       .producto__recomendaciones .producto__recomendaciones--container .producto__recomendaciones--item a img {
         width: 252px;
         height: 220px; }
-        .producto__recomendaciones .producto__recomendaciones--container .producto__recomendaciones--item a img:hover {
-          scale: 1.5; }
       .producto__recomendaciones .producto__recomendaciones--container .producto__recomendaciones--item a .imagen230 {
         width: 230px; }
       .producto__recomendaciones .producto__recomendaciones--container .producto__recomendaciones--item a .imagen170 {
