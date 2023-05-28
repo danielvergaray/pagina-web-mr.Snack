@@ -34,7 +34,7 @@ body {
 
 :root {
   --paddingLateral: 8em;
-  --padding-top: 100px;
+  --padding-top: 95px;
   /*Para que la info no quede debajo de la nav bar */
   --altura-menu-mobile: height: 80px;
   /*BOTONES*/
@@ -503,7 +503,9 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   /* height: 100vh; */
-  height: 15rem; }
+  height: 15rem;
+  padding-top: 100px;
+  /*Para que la info no quede debajo de la navBar */ }
 
 .saludablesContainer {
   /*Para que la info no quede debajo de la navBar */
@@ -900,6 +902,55 @@ body {
           color: black;
           text-transform: uppercase;
           font-family: 'Barlow Condensed', sans-serif; } }
+
+.proximamenteContainer .proximamenteContainer__background {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), transparent), url("/imagenes/proximamente/colorful-sweets-with-copy-space (1).jpg");
+  background-position: left 70%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 15rem; }
+  .proximamenteContainer .proximamenteContainer__background h1 {
+    color: white;
+    font-size: 50px;
+    padding-top: calc(var(--padding-top) + 70px);
+    /*Para que la info no quede debajo de la navBar */
+    margin-left: 10rem; }
+
+.proximamenteContainer .proximamenteContainer__productos {
+  width: 100%; }
+  .proximamenteContainer .proximamenteContainer__productos .proximamenteContainer__primeraFila,
+  .proximamenteContainer .proximamenteContainer__productos .proximamenteContainer__segundaFila {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 10px 40px 10px; }
+    .proximamenteContainer .proximamenteContainer__productos .proximamenteContainer__primeraFila .proximamenteContainer__productos--item,
+    .proximamenteContainer .proximamenteContainer__productos .proximamenteContainer__segundaFila .proximamenteContainer__productos--item {
+      width: 280px;
+      border: 1px #d3d3d3 solid;
+      text-align: center;
+      height: 450px; }
+      .proximamenteContainer .proximamenteContainer__productos .proximamenteContainer__primeraFila .proximamenteContainer__productos--item .sticker,
+      .proximamenteContainer .proximamenteContainer__productos .proximamenteContainer__segundaFila .proximamenteContainer__productos--item .sticker {
+        width: 130px;
+        position: relative;
+        top: -100px;
+        display: inline-block;
+        margin-left: 150px;
+        transform: rotate(36deg); }
+      .proximamenteContainer .proximamenteContainer__productos .proximamenteContainer__primeraFila .proximamenteContainer__productos--item img,
+      .proximamenteContainer .proximamenteContainer__productos .proximamenteContainer__segundaFila .proximamenteContainer__productos--item img {
+        width: 250px;
+        margin-top: 20px; }
+      .proximamenteContainer .proximamenteContainer__productos .proximamenteContainer__primeraFila .proximamenteContainer__productos--item h2,
+      .proximamenteContainer .proximamenteContainer__productos .proximamenteContainer__segundaFila .proximamenteContainer__productos--item h2 {
+        font-size: 25px;
+        text-transform: capitalize;
+        padding: 20px 25px 0px;
+        margin: 0;
+        position: relative;
+        top: -100px; }
+  .proximamenteContainer .proximamenteContainer__productos .proximamenteContainer__primeraFila {
+    padding-bottom: 0; }
 
 .tiendasContainer {
   padding-top: var(--padding-top);
