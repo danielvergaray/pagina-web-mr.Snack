@@ -1049,7 +1049,7 @@ body {
   display: flex;
   flex-direction: column;
   text-transform: uppercase;
-  background-color: black;
+  background-color: #090909;
   color: white; }
   .cateringContainer .cateringContainer__titulo {
     padding: 32px;
@@ -1088,8 +1088,11 @@ body {
     .cateringContainer .cateringContainer__hero .info3 {
       grid-column: 1;
       grid-row: 3; }
-    .cateringContainer .cateringContainer__hero p {
-      padding: 20px 0; }
+    .cateringContainer .cateringContainer__hero ul {
+      padding: 20px 0;
+      line-height: 30px; }
+    .cateringContainer .cateringContainer__hero h2 {
+      color: orangered; }
     .cateringContainer .cateringContainer__hero img {
       width: 90%; }
     .cateringContainer .cateringContainer__hero button {
