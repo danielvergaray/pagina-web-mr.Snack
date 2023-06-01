@@ -1158,65 +1158,100 @@ body {
           font-family: 'Barlow Condensed', sans-serif; } }
 
 .contactoContainer {
-  background-image: url("../imagenes/contacto/fondo.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.9), transparent), url("../imagenes/imagenPoliticas.jpg");
+  background-position: 90%;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 128px 30px;
-  display: grid;
-  grid-template-columns: 25% 50% 25%;
-  text-transform: uppercase; }
-  .contactoContainer .contactoContainer__columnaIzquierda {
-    grid-column: 1;
-    padding: 32px;
-    background-color: rgba(0, 0, 0, 0.6);
-    text-align: center;
-    display: flex;
-    align-items: center;
-    color: white;
-    font-size: 25px; }
-  .contactoContainer .contactoContainer__central {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    grid-column: 2;
-    color: white; }
-    .contactoContainer .contactoContainer__central .contactoContainer__columnaCentral {
+  font-family: 'Lato', sans-serif;
+  height: 100vh; }
+  .contactoContainer .heroContacto {
+    padding-top: calc(var(--padding-top) + 70px);
+    /*Para que la info no quede debajo de la navBar  */ }
+    .contactoContainer .heroContacto div {
       display: flex;
-      width: 50%;
-      flex-direction: column;
-      box-shadow: 7px 13px 37px black;
-      background-color: #24303c; }
-      .contactoContainer .contactoContainer__central .contactoContainer__columnaCentral h1 {
+      justify-content: left; }
+      .contactoContainer .heroContacto div h1 {
+        padding: 32px;
+        padding-left: 60px;
+        padding-top: 0;
+        text-align: justify;
+        width: 50%;
+        color: white;
         font-size: 25px;
-        padding-top: 15px; }
-      .contactoContainer .contactoContainer__central .contactoContainer__columnaCentral label {
-        padding-top: 18px;
-        font-size: 20px; }
-      .contactoContainer .contactoContainer__central .contactoContainer__columnaCentral input {
+        font-family: 'Lato', sans-serif; }
+  .contactoContainer .contactoContainer__infoUsuario {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+    padding: 10px 50px 20px 30px;
+    color: white;
+    width: 100%; }
+    .contactoContainer .contactoContainer__infoUsuario .contactoContainer__datos {
+      grid-column: 1;
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      padding: 10px;
+      background-color: transparent; }
+      .contactoContainer .contactoContainer__infoUsuario .contactoContainer__datos h2 {
+        font-size: 25px; }
+      .contactoContainer .contactoContainer__infoUsuario .contactoContainer__datos .infoUsuario {
+        grid-column: 1;
+        width: fit-content;
+        height: fit-content; }
+      .contactoContainer .contactoContainer__infoUsuario .contactoContainer__datos input {
         font-size: 17px;
         margin: 20px;
         padding: 8px;
-        font-family: 'Barlow Condensed', sans-serif;
-        text-transform: uppercase; }
-      .contactoContainer .contactoContainer__central .contactoContainer__columnaCentral .botonFormulario {
-        cursor: pointer; }
-        .contactoContainer .contactoContainer__central .contactoContainer__columnaCentral .botonFormulario:hover {
-          opacity: .5; }
-      .contactoContainer .contactoContainer__central .contactoContainer__columnaCentral .mensaje {
-        height: 100px; }
-  .contactoContainer .contactoContainer__columnaDerecha {
-    grid-column: 3;
-    background-color: rgba(0, 0, 0, 0.6);
-    text-align: center;
+        font-family: 'Lato', sans-serif;
+        text-transform: uppercase;
+        border: 0;
+        border-bottom: 1px solid black;
+        background-color: transparent; }
+        .contactoContainer .contactoContainer__infoUsuario .contactoContainer__datos input::placeholder {
+          color: black;
+          text-transform: capitalize;
+          font-family: 'Lato', sans-serif; }
+    .contactoContainer .contactoContainer__infoUsuario .recuadroMensaje {
+      height: fit-content;
+      grid-column: 2;
+      width: fit-content;
+      padding-bottom: 20px;
+      padding: 10px; }
+      .contactoContainer .contactoContainer__infoUsuario .recuadroMensaje .input-mensaje {
+        height: fit-content;
+        width: fit-content;
+        grid-column: 2;
+        font-size: 17px;
+        padding: 8px;
+        padding-bottom: 90px;
+        margin: 20px;
+        font-family: 'Lato', sans-serif;
+        text-transform: uppercase;
+        border: 0;
+        border-bottom: 1px solid black;
+        background-color: transparent; }
+        .contactoContainer .contactoContainer__infoUsuario .recuadroMensaje .input-mensaje::placeholder {
+          color: black;
+          text-transform: capitalize;
+          font-family: 'Lato', sans-serif; }
+    .contactoContainer .contactoContainer__infoUsuario .fila1 {
+      grid-row: 1; }
+    .contactoContainer .contactoContainer__infoUsuario .fila2 {
+      grid-row: 2; }
+  .contactoContainer div {
     display: flex;
-    justify-content: space-around;
-    color: white;
-    flex-direction: column;
-    font-size: 25px;
-    padding: 32px; }
-    .contactoContainer .contactoContainer__columnaDerecha h2 {
-      font-size: 20px;
-      font-weight: bold; }
+    justify-content: center; }
+    .contactoContainer div .botonFormulario {
+      font-size: 21px;
+      font-family: 'Barlow Condensed', sans-serif;
+      text-transform: uppercase;
+      background-color: orangered;
+      padding: 15px;
+      cursor: pointer;
+      border-radius: var(--radio-border);
+      border: 0px; }
+      .contactoContainer div .botonFormulario:hover {
+        opacity: .5; }
 
 /* VERSION MOBILE --------  */
 @media (max-width: 576px) {

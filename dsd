@@ -1,0 +1,17 @@
+[33me73871e[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m Se ha culminado con la seccion CATERING
+[33mca949d7[m  Se ha modificado la seccion de tiendas ya que en una dimenasion de pantalla mas pequeña, las imagenes de las tiendas ocupan mas del espacio deseado, tambien se ha iniciado la seccion de CATERING
+[33me959f6a[m  se ha eliminado el hover en la secciones de productos recomendados
+[33m9fb8e04[m Se ha creado la seccion PROXIMAMENTE, en el index
+[33mebb8232[m Se han creado las secciones POLITICA y MEDIOS DE PAGO dentro del FOOTER
+[33md54c46f[m se intenta el commit anterior nuevamente
+[33m2159ac6[m  Se ha creado la seccion TIENDAS, y se ha colocado esta opcion en la barra inferior en lugar de AYUDA, en COMBOS, se ha modificado la orientacion de los textos y se ha eliminado el borde en las imagenes, se ha creado la seccion DELIVERY
+[33m06e39d3[m  Se ha creado las secciones mani salado, almendras, arandanos, nueces, pasas. Dentro de la seccion Saludables. Tambien se ha modificado la seccion Saludables
+[33m6475dc2[m Se ha completado las secciones de Doritos, lays, pringles, ruffles, inkachips, tostitos, cheetos, papas cuisine. Dentro de la seccion de SALADOS, se culmninó con todo de SALADOS (faltando la barra izquierda)
+[33mbcf3792[m Se ha completado las secciones de Pirucream, caramelos rellenos, gusanos, chips ahoy, bombones, chocolate con leche, galleta de vainilla. Con esto se ha completado toda la seccion de dulces (Falta la barra izquierda). Tambien se ha creado una nueva seccion scss en utilidades llamada _propiedades-productos, para colocar aqui todas las propiedades de los productos en venta de las ssecciones Dulces y Salados
+[33mffc883a[m prueba con la otra laptop
+[33m20ac0b8[m Se ha creado la seccion Galleta Oreo Vainilla y su sseccion de productos recomendados
+[33mbf24837[m Se ha creado la seccion _Podria interesarte_ en la seccion almendras
+[33m9ced952[m se han colocado los textos, imagenes y botones a la misma altura en las seccioens Dulces y Salados
+[33m9543967[m Se ha habilitado el acceso a dulces y salados desde el menu de navegacion de cada seccion
+[33med754f4[m Creacion de la seccion Salados, queda pendiente la barra izquierda
+[33m7deb20b[m inicio desarrollo pagina Dulces, falta solamente la barra izquierda

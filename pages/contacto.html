@@ -46,11 +46,10 @@
             <a href="../index.html"><img src="../imagenes/index/logo.png" alt="logo"></a>
             <nav>
                 <ul>
-                    <li><a href="#">Dulces</a></li>
-                    <li><a href="#">Salados</a></li>
+                    <li><a href="../pages/dulces.html">Dulces</a></li>
+                    <li><a href="../pages/salados.html">Salados</a></li>
                     <li><a href="./saludables.html">Saludables</a></li>
                     <li><a href="./combos.html">Combos</a></li>
-                    <li><a href="./almendras.html">Almendras</a></li>
                 </ul>
             </nav>
 
@@ -65,39 +64,45 @@
         <!--------------- cabecera desktop --------------------->
     </header>
     <main class="contactoContainer">
-        <div class="contactoContainer__columnaIzquierda">
-            <p>Para nosotros en Mr. Snack es muy
-                importante la opinion de nuestros clientes,
-                por eso te dejamos nuestros canales de comunicacion,
-                sientete libre de expresarnos tus ideas</p>
-        </div>
-        <div class="contactoContainer__central">
-            <form class="contactoContainer__columnaCentral" action="" method="post">
-                <h1>Formulario de atención</h1>
-                <label for="nombre">Nombre</label>
-                <input type="text" name="nombre" placeholder="Escriba su nombre">
-                <label for="apellido">Apellido</label>
-                <input type="text" name="apellido" placeholder="Escriba su apellido">
-                <label for="email">Correo electronico</label>
-                <input type="email" name="email" placeholder="Escriba su correo electronico">
-                <label for="">Mensaje o Sugerencia</label>
-                <input type="text" name="mensaje" class="mensaje">
-                <input type="submit" value="Enviar" class="botonFormulario" name="boton">
+        <section class="heroContacto">
+            <div>
+                <h1>
+                    Para nosotros en Mr. Snack es muy
+                    importante la opinion de nuestros clientes,
+                    por eso te dejamos nuestros canales de comunicacion,
+                    sientete libre de expresarnos tus ideas
+                </h1>
+
+            </div>
+        </section>
+
+        <div class="contactoContainer__infoUsuario">
+            <h2>Primero, cuentanos acerca de ti</h2>
+            <form class="contactoContainer__datos" action="" method="post">
+
+                <div class="infoUsuario fila1">
+                    <input type="text" name="nombre" placeholder="Primer nombre *">
+                    <input type="text" name="apellido" placeholder="Primer apellido *">
+
+                </div>
+                <div class="infoUsuario fila2">
+                    <input type="email" name="email" placeholder="Correo electronico *">
+                    <input type="text" name="pais" placeholder="Pais *">
+
+                </div>
+
             </form>
+            <div class="recuadroMensaje">
+
+                <input class="input-mensaje" type="text" name="mensaje" placeholder="Mensaje *">
+            </div>
+
         </div>
-        <div class="contactoContainer__columnaDerecha">
-            <div>
-                <h2>Tambien puedes comunicarte con nosotros por los siguientes medios: </h2>
-            </div>
-            <div>
-                <h3>Central de reclamos</h3><i class="fa-solid fa-phone-volume"></i>
-            </div>
-            <p>xx-xxx-xxx</p>
-            <div>
-                <h3>Mensajeria por whatsapp</h3><i class="fa-brands fa-whatsapp"></i>
-            </div>
-            <p>xx-xxx-xxx</p>
+        <div>
+            <input type="submit" value="Enviar" class="botonFormulario" name="boton">
         </div>
+
+
 
     </main>
 
