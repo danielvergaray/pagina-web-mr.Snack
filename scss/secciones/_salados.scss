@@ -84,13 +84,11 @@
                     button {
                         font-size: 20px;
                         padding: 16px;
-                        background-color: $anaranjado;
-                        border-radius: var(--radio-border);
-                        border: 0px;
+                        @extend .propiedadesBotones;
                         cursor: pointer;
                         text-transform: uppercase;
                         font-family: 'Barlow Condensed', sans-serif;
-                        border-color: $anaranjado;
+                        
 
                         &:hover {
                             opacity: 0.8;
