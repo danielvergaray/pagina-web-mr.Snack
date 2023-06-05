@@ -35,7 +35,7 @@
             }
 
             h3 {
-                color: $rojo;
+                color: $negro;
                 text-align: left;
                 font-size: 32px;
                 
@@ -64,11 +64,9 @@
                 font-size: 21px;
                 font-family: 'Barlow Condensed', sans-serif;
                 text-transform: uppercase;
-                background-color: $anaranjado;
                 padding: 15px;
                 cursor: pointer;
-                border-radius: var(--radio-border);
-                border: 0px;
+                @extend .propiedadesBotones;
 
                 &:hover {
                     opacity: .7;

@@ -32,8 +32,10 @@ body {
   border: 1px #d3d3d3 solid;
   text-align: center; }
 
-.propiedadesBotones, .saladosContainer .saladosContainer__productos .saladosContainer__primeraFila .saladosContainer__productos--item .saladosContainer__productos--boton button,
-.saladosContainer .saladosContainer__productos .saladosContainer__segundaFila .saladosContainer__productos--item .saladosContainer__productos--boton button {
+.propiedadesBotones, .saludablesContainer .saludablesContainer__productos .saludablesContainer__primeraFila .saludablesContainer__productos--item .saludablesContainer__productos--boton button,
+.saludablesContainer .saludablesContainer__productos .saludablesContainer__segundaFila .saludablesContainer__productos--item .saludablesContainer__productos--boton button, .combos__saludables button, .dulcesContainer .dulcesContainer__productos .dulcesContainer__primeraFila .dulcesContainer__productos--item .dulcesContainer__productos--boton button,
+.dulcesContainer .dulcesContainer__productos .dulcesContainer__segundaFila .dulcesContainer__productos--item .dulcesContainer__productos--boton button, .saladosContainer .saladosContainer__productos .saladosContainer__primeraFila .saladosContainer__productos--item .saladosContainer__productos--boton button,
+.saladosContainer .saladosContainer__productos .saladosContainer__segundaFila .saladosContainer__productos--item .saladosContainer__productos--boton button, .combosContainer .combosContainer__hero .combosContainer__producto button, .contactoContainer div .botonFormulario, .productoContainer .productoContainer__info .productoContainer__boton button {
   color: white;
   background-color: orangered;
   border-radius: var(--radio-border);
@@ -534,19 +536,21 @@ body {
       width: 7em;
       height: 8em; } }
 
-.heroSaludables {
-  background: linear-gradient(rgba(0, 0, 0, 0.9), transparent), url("../imagenes/saludables/frutosSecos.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* height: 100vh; */
-  height: 15rem;
-  padding-top: 100px;
-  /*Para que la info no quede debajo de la navBar */ }
-
+/* .heroSaludables {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.9), transparent),
+        url("../imagenes/saludables/frutosSecos.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 100vh; */
+/* height: 15rem;
+    padding-top: 100px; */
+/*Para que la info no quede debajo de la navBar */
 .saludablesContainer {
   /*Para que la info no quede debajo de la navBar */
-  display: flex; }
+  display: flex;
+  padding-top: 100px; }
   .saludablesContainer .saludablesContainer__barraIzquierda {
     padding-top: 50px;
     padding-left: 20px;
@@ -594,9 +598,6 @@ body {
         .saludablesContainer .saludablesContainer__productos .saludablesContainer__segundaFila .saludablesContainer__productos--item .saludablesContainer__productos--boton button {
           font-size: 20px;
           padding: 16px;
-          background-color: orangered;
-          border-radius: var(--radio-border);
-          border: 0px;
           cursor: pointer;
           text-transform: uppercase;
           font-family: 'Barlow Condensed', sans-serif;
@@ -618,11 +619,7 @@ body {
   .combos__saludables button {
     font-size: 20px;
     padding: 15px;
-    background-color: orangered;
-    color: white;
-    cursor: pointer;
-    border: 0px;
-    border-radius: var(--radio-border); }
+    cursor: pointer; }
     .combos__saludables button:hover {
       opacity: .8; }
 
@@ -749,9 +746,6 @@ body {
         .dulcesContainer .dulcesContainer__productos .dulcesContainer__segundaFila .dulcesContainer__productos--item .dulcesContainer__productos--boton button {
           font-size: 20px;
           padding: 16px;
-          background-color: orangered;
-          border-radius: var(--radio-border);
-          border: 0px;
           cursor: pointer;
           text-transform: uppercase;
           font-family: 'Barlow Condensed', sans-serif;
@@ -860,7 +854,7 @@ body {
         opacity: 0.6;
         max-width: 90%; }
       .combosContainer .combosContainer__hero .combosContainer__producto h3 {
-        color: red;
+        color: black;
         text-align: left;
         font-size: 32px;
         padding: 1.6px 0 20px 0; }
@@ -878,11 +872,8 @@ body {
         font-size: 21px;
         font-family: 'Barlow Condensed', sans-serif;
         text-transform: uppercase;
-        background-color: orangered;
         padding: 15px;
-        cursor: pointer;
-        border-radius: var(--radio-border);
-        border: 0px; }
+        cursor: pointer; }
         .combosContainer .combosContainer__hero .combosContainer__producto button:hover {
           opacity: .7; }
 
@@ -1195,8 +1186,7 @@ body {
   background-position: 90%;
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: 'Lato', sans-serif;
-  height: 100vh; }
+  font-family: 'Barlow Condensed', sans-serif; }
   .contactoContainer .heroContacto {
     padding-top: calc(var(--padding-top) + 70px);
     /*Para que la info no quede debajo de la navBar  */ }
@@ -1204,29 +1194,32 @@ body {
       display: flex;
       justify-content: left; }
       .contactoContainer .heroContacto div h1 {
-        padding: 32px;
-        padding-left: 60px;
+        padding-left: 35px;
+        padding-bottom: 20px;
         padding-top: 0;
         text-align: justify;
         width: 50%;
         color: white;
         font-size: 25px;
-        font-family: 'Lato', sans-serif; }
+        font-family: 'Barlow Condensed', sans-serif; }
   .contactoContainer .contactoContainer__infoUsuario {
     display: grid;
     grid-template-columns: 50% 50%;
     text-align: center;
-    padding: 10px 50px 20px 30px;
+    padding: 10px 50px 20px 0px;
     color: white;
     width: 100%; }
+    .contactoContainer .contactoContainer__infoUsuario h2 {
+      font-size: 25px;
+      text-align: left;
+      padding-left: 65px;
+      font-family: 'Barlow Condensed', sans-serif; }
     .contactoContainer .contactoContainer__infoUsuario .contactoContainer__datos {
       grid-column: 1;
       display: grid;
       grid-template-rows: 1fr 1fr;
       padding: 10px;
       background-color: transparent; }
-      .contactoContainer .contactoContainer__infoUsuario .contactoContainer__datos h2 {
-        font-size: 25px; }
       .contactoContainer .contactoContainer__infoUsuario .contactoContainer__datos .infoUsuario {
         grid-column: 1;
         width: fit-content;
@@ -1235,7 +1228,7 @@ body {
         font-size: 17px;
         margin: 20px;
         padding: 8px;
-        font-family: 'Lato', sans-serif;
+        font-family: 'Barlow Condensed', sans-serif;
         text-transform: uppercase;
         border: 0;
         border-bottom: 1px solid black;
@@ -1243,13 +1236,14 @@ body {
         .contactoContainer .contactoContainer__infoUsuario .contactoContainer__datos input::placeholder {
           color: black;
           text-transform: capitalize;
-          font-family: 'Lato', sans-serif; }
+          font-family: 'Barlow Condensed', sans-serif; }
     .contactoContainer .contactoContainer__infoUsuario .recuadroMensaje {
       height: fit-content;
-      grid-column: 2;
+      grid-column: 1;
       width: fit-content;
       padding-bottom: 20px;
-      padding: 10px; }
+      padding: 10px;
+      padding-left: 45px; }
       .contactoContainer .contactoContainer__infoUsuario .recuadroMensaje .input-mensaje {
         height: fit-content;
         width: fit-content;
@@ -1258,7 +1252,7 @@ body {
         padding: 8px;
         padding-bottom: 90px;
         margin: 20px;
-        font-family: 'Lato', sans-serif;
+        font-family: 'Barlow Condensed', sans-serif;
         text-transform: uppercase;
         border: 0;
         border-bottom: 1px solid black;
@@ -1266,23 +1260,23 @@ body {
         .contactoContainer .contactoContainer__infoUsuario .recuadroMensaje .input-mensaje::placeholder {
           color: black;
           text-transform: capitalize;
-          font-family: 'Lato', sans-serif; }
+          font-family: 'Barlow Condensed', sans-serif; }
     .contactoContainer .contactoContainer__infoUsuario .fila1 {
       grid-row: 1; }
     .contactoContainer .contactoContainer__infoUsuario .fila2 {
       grid-row: 2; }
   .contactoContainer div {
     display: flex;
-    justify-content: center; }
+    justify-content: left;
+    padding-left: 32px; }
     .contactoContainer div .botonFormulario {
       font-size: 21px;
       font-family: 'Barlow Condensed', sans-serif;
       text-transform: uppercase;
-      background-color: orangered;
       padding: 15px;
       cursor: pointer;
-      border-radius: var(--radio-border);
-      border: 0px; }
+      margin-left: 30px;
+      margin-bottom: 40px; }
       .contactoContainer div .botonFormulario:hover {
         opacity: .5; }
 
@@ -1388,7 +1382,8 @@ body {
     margin-left: 10rem; }
 
 .politica {
-  padding: 5% 25%;
+  padding: 5% 25% 5% 0;
+  margin-left: 10rem;
   font-family: 'Lato', sans-serif;
   font-size: 16px; }
   .politica p {
@@ -1453,6 +1448,8 @@ body {
       color: black; }
       .productoContainer .productoContainer__barraSuperior a:hover {
         color: blue; }
+      .productoContainer .productoContainer__barraSuperior a:nth-child(3) {
+        word-spacing: 3px; }
   .productoContainer .productoContainer__hero {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -1494,7 +1491,7 @@ body {
       font-size: 30px;
       padding-top: 25px; }
       .productoContainer .productoContainer__info .productoContainer__precio p {
-        padding-right: 150px; }
+        padding-right: 380px; }
     .productoContainer .productoContainer__info .productoContainer__boton {
       display: flex;
       justify-content: center;
@@ -1503,13 +1500,9 @@ body {
         font-size: 20px;
         width: 100%;
         padding: 16px;
-        background-color: orangered;
-        border-radius: var(--radio-border);
-        border: 0px;
         cursor: pointer;
         text-transform: uppercase;
-        font-family: 'Barlow Condensed', sans-serif;
-        border-color: orangered; }
+        font-family: 'Barlow Condensed', sans-serif; }
         .productoContainer .productoContainer__info .productoContainer__boton button:hover {
           opacity: 0.8; }
 
@@ -1598,10 +1591,10 @@ body {
       text-decoration: none;
       font-size: 25px; }
       .footerContainer .footerContainer__contacto a:hover {
-        background-color: red;
+        background-color: orangered;
         padding: 10px; }
     .footerContainer .footerContainer__contacto .desktopfooter__opcion-marcada {
-      background-color: red;
+      background-color: orangered;
       padding: 10px; }
 
 /* VERSION MOBILE -------  */

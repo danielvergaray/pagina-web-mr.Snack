@@ -17,6 +17,10 @@
             &:hover {
                 color: $azul;
             }
+            &:nth-child(3){
+                word-spacing: 3px;
+                
+            }
         }
     }
 
@@ -84,7 +88,7 @@
             padding-top: 25px;
 
             p {
-                padding-right: 150px;
+                padding-right: 380px;
             }
         }
 
@@ -97,13 +101,11 @@
                 font-size: 20px;
                 width: 100%;
                 padding: 16px;
-                background-color: $anaranjado;
-                border-radius: var(--radio-border);
-                border: 0px;
+                @extend .propiedadesBotones;
                 cursor: pointer;
                 text-transform: uppercase;
                 font-family: 'Barlow Condensed', sans-serif;
-                border-color: $anaranjado;
+                
 
                 &:hover {
                     opacity: 0.8;

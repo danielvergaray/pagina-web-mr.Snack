@@ -5,8 +5,9 @@
     background-position: 90%;
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: 'Lato', sans-serif;
-    height: 100vh;
+    font-family: 'Barlow Condensed', sans-serif;
+
+    
 
 
     .heroContacto {
@@ -20,14 +21,15 @@
             justify-content: left;
 
             h1 {
-                padding: 32px;
-                padding-left: 60px;
+                
+                padding-left: 35px;
+                padding-bottom: 20px;
                 padding-top: 0;
                 text-align: justify;
                 width: 50%;
                 color: $blanco;
                 font-size: 25px;
-                font-family: 'Lato', sans-serif;
+                font-family: 'Barlow Condensed', sans-serif;
 
 
             }
@@ -39,9 +41,18 @@
         display: grid;
         grid-template-columns: 50% 50%;
         text-align: center;
-        padding: 10px 50px 20px 30px;
+        padding: 10px 50px 20px 0px;
         color: $blanco;
         width: 100%;
+
+        h2 {
+            font-size: 25px;
+            // padding-top: 15px;
+            text-align: left;
+            padding-left: 65px;
+            font-family: 'Barlow Condensed', sans-serif;
+
+        }
 
         .contactoContainer__datos {
             grid-column: 1;
@@ -53,11 +64,6 @@
             background-color: transparent;
 
 
-            h2 {
-                font-size: 25px;
-                // padding-top: 15px;
-            }
-
             .infoUsuario {
                 grid-column: 1;
                 width: fit-content;
@@ -68,7 +74,8 @@
                 font-size: 17px;
                 margin: 20px;
                 padding: 8px;
-                font-family: 'Lato', sans-serif;
+                font-family: 'Barlow Condensed', sans-serif;
+
                 text-transform: uppercase;
                 border: 0;
                 border-bottom: 1px solid black;
@@ -77,7 +84,8 @@
                 &::placeholder {
                     color: black;
                     text-transform: capitalize;
-                    font-family: 'Lato', sans-serif;
+                    font-family: 'Barlow Condensed', sans-serif;
+
                 }
             }
 
@@ -85,10 +93,11 @@
 
         .recuadroMensaje {
             height: fit-content;
-            grid-column: 2;
+            grid-column: 1;
             width: fit-content;
             padding-bottom: 20px;
             padding: 10px;
+            padding-left: 45px;
 
             .input-mensaje {
                 height: fit-content;
@@ -98,7 +107,8 @@
                 padding: 8px;
                 padding-bottom: 90px;
                 margin: 20px;
-                font-family: 'Lato', sans-serif;
+                font-family: 'Barlow Condensed', sans-serif;
+
                 text-transform: uppercase;
                 border: 0;
                 border-bottom: 1px solid black;
@@ -107,7 +117,8 @@
                 &::placeholder {
                     color: black;
                     text-transform: capitalize;
-                    font-family: 'Lato', sans-serif;
+                    font-family: 'Barlow Condensed', sans-serif;
+
 
 
                 }
@@ -129,17 +140,20 @@
 
     div {
         display: flex;
-        justify-content: center;
+        justify-content: left;
+        padding-left: 32px;
+        
 
         .botonFormulario {
             font-size: 21px;
             font-family: 'Barlow Condensed', sans-serif;
             text-transform: uppercase;
-            background-color: $anaranjado;
+            @extend .propiedadesBotones;
             padding: 15px;
             cursor: pointer;
-            border-radius: var(--radio-border);
-            border: 0px;
+            margin-left: 30px;
+            margin-bottom: 40px;
+            
             
 
             &:hover {

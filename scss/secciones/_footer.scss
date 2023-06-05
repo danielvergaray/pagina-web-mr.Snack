@@ -32,7 +32,7 @@
             @include propiedades-menuFooter ($blanco, none, 25px);
 
             &:hover {
-                background-color: $rojo;
+                background-color: orangered;
                 padding: 10px;
 
 
@@ -41,7 +41,7 @@
         }
 
         .desktopfooter__opcion-marcada {
-            background-color: $rojo;
+            background-color: orangered;
             padding: 10px;
         }
     }
