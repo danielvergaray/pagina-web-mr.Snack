@@ -39,6 +39,10 @@
             padding-top: 10px;
             
         }
+        .saladosContainer__titulo-mobile{
+            display: none;
+            
+        }
 
         .saladosContainer__primeraFila,
         .saladosContainer__segundaFila {
@@ -123,7 +127,7 @@
         // padding-top: var(--padding-top);
         /*Para que la info no quede debajo de la navBar */
         display: flex;
-        padding-top: 100px;
+        padding-top: 50px;
         flex-wrap: wrap;
         
     
@@ -143,6 +147,13 @@
                 height: 200px;
                 
     
+            }
+            .saladosContainer__titulo-mobile{
+                display: block;
+                font-family: 'Barlow Condensed', sans-serif;
+                text-align: center;
+                font-size: 30px;
+                padding-bottom: 50px;
             }
             
     

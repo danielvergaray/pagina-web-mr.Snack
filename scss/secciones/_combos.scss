@@ -93,8 +93,13 @@
         flex-direction: column;
 
         .combosContainer__titulo {
-            font-size: 25px;
-            padding: 15px 0;
+            
+            
+
+            h1{
+                font-size: 30px;
+                padding: 0px 0;
+            }
         }
 
         .combosContainer__hero {
@@ -110,33 +115,33 @@
                 padding-bottom: 32px;
 
                 a {
+                    width: fit-content;
                     img {
                         text-align: center;
                         border-color: white;
+                        width: 95%;
                     }
                 }
 
+                h2 {
+                
+                    color: $rojo;
+                    padding: 20px  0 8px 0;
+                }
+    
                 p {
+                    padding: 3.2px 50px;
                     opacity: 0.6;
-                    padding: 0;
-                    text-align: center;
-                    font-size: 20px;
-                    margin: 0;
-                    max-width: 100%;
+                   
                 }
-
-                .h2 {
-                    padding: 8px;
-                    font-size: 30px;
-                }
-
-                .h3 {
-                    color: $anaranjado;
-                    text-align: center;
-                    font-size: 30px;
-                    padding-top: 10px;
-                    padding-left: 0;
-                    padding-bottom: 16px;
+    
+                h3 {
+                    color: $negro;
+                    text-align: left;
+                    font-size: 32px;
+                    
+                    padding: 1.6px 0 20px 20px;
+                    
                 }
 
                 button {

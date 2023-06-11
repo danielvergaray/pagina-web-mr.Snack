@@ -564,6 +564,8 @@ body {
   .saludablesContainer .saludablesContainer__productos img {
     width: 210px;
     margin-top: 10px; }
+  .saludablesContainer .saludablesContainer__productos .saludablesContainer__titulo-mobile {
+    display: none; }
   .saludablesContainer .saludablesContainer__productos .saludablesContainer__primeraFila,
   .saludablesContainer .saludablesContainer__productos .saludablesContainer__segundaFila {
     display: flex;
@@ -633,7 +635,7 @@ body {
   .saludablesContainer {
     /*Para que la info no quede debajo de la navBar */
     display: flex;
-    padding-top: 100px;
+    padding-top: 50px;
     flex-wrap: wrap; }
     .saludablesContainer .saludablesContainer__barraIzquierda {
       display: none; }
@@ -641,6 +643,12 @@ body {
       width: 100%;
       margin-top: 10px;
       height: 200px; }
+    .saludablesContainer .saludablesContainer__productos .saludablesContainer__titulo-mobile {
+      display: block;
+      font-family: 'Barlow Condensed', sans-serif;
+      text-align: center;
+      font-size: 30px;
+      padding-bottom: 50px; }
     .saludablesContainer .saludablesContainer__productos .saludablesContainer__primeraFila,
     .saludablesContainer .saludablesContainer__productos .saludablesContainer__segundaFila {
       padding: 0;
@@ -713,6 +721,8 @@ body {
     width: 100%; }
   .dulcesContainer .dulcesContainer__productos .imagen230 {
     width: 200px; }
+  .dulcesContainer .dulcesContainer__productos .dulcesContainer__titulo-mobile {
+    display: none; }
   .dulcesContainer .dulcesContainer__productos .dulcesContainer__primeraFila,
   .dulcesContainer .dulcesContainer__productos .dulcesContainer__segundaFila {
     grid-column: 2;
@@ -768,7 +778,7 @@ body {
   .dulcesContainer {
     /*Para que la info no quede debajo de la navBar */
     display: flex;
-    padding-top: 100px;
+    padding-top: 50px;
     flex-wrap: wrap; }
     .dulcesContainer .dulcesContainer__barraIzquierda {
       display: none; }
@@ -778,6 +788,12 @@ body {
       height: 200px; }
     .dulcesContainer .dulcesContainer__productos .imagen230 {
       width: 90%; }
+    .dulcesContainer .dulcesContainer__productos .dulcesContainer__titulo-mobile {
+      display: block;
+      font-family: 'Barlow Condensed', sans-serif;
+      text-align: center;
+      font-size: 30px;
+      padding-bottom: 50px; }
     .dulcesContainer .dulcesContainer__productos .dulcesContainer__primeraFila,
     .dulcesContainer .dulcesContainer__productos .dulcesContainer__segundaFila {
       padding: 0;
@@ -856,6 +872,8 @@ body {
   .saladosContainer .saladosContainer__productos .imagen160 {
     width: 160px;
     padding-top: 10px; }
+  .saladosContainer .saladosContainer__productos .saladosContainer__titulo-mobile {
+    display: none; }
   .saladosContainer .saladosContainer__productos .saladosContainer__primeraFila,
   .saladosContainer .saladosContainer__productos .saladosContainer__segundaFila {
     grid-column: 2;
@@ -912,7 +930,7 @@ body {
   .saladosContainer {
     /*Para que la info no quede debajo de la navBar */
     display: flex;
-    padding-top: 100px;
+    padding-top: 50px;
     flex-wrap: wrap; }
     .saladosContainer .saladosContainer__barraIzquierda {
       display: none; }
@@ -920,6 +938,12 @@ body {
       width: 100%;
       margin-top: 10px;
       height: 200px; }
+    .saladosContainer .saladosContainer__productos .saladosContainer__titulo-mobile {
+      display: block;
+      font-family: 'Barlow Condensed', sans-serif;
+      text-align: center;
+      font-size: 30px;
+      padding-bottom: 50px; }
     .saladosContainer .saladosContainer__productos .saladosContainer__primeraFila,
     .saladosContainer .saladosContainer__productos .saladosContainer__segundaFila {
       padding: 0;
@@ -1032,9 +1056,9 @@ body {
     padding-bottom: 0;
     display: flex;
     flex-direction: column; }
-    .combosContainer .combosContainer__titulo {
-      font-size: 25px;
-      padding: 15px 0; }
+    .combosContainer .combosContainer__titulo h1 {
+      font-size: 30px;
+      padding: 0px 0; }
     .combosContainer .combosContainer__hero {
       display: flex;
       align-items: center;
@@ -1045,26 +1069,23 @@ body {
         width: 100%;
         text-align: center;
         padding-bottom: 32px; }
-        .combosContainer .combosContainer__hero .combosContainer__producto a img {
-          text-align: center;
-          border-color: white; }
+        .combosContainer .combosContainer__hero .combosContainer__producto a {
+          width: fit-content; }
+          .combosContainer .combosContainer__hero .combosContainer__producto a img {
+            text-align: center;
+            border-color: white;
+            width: 95%; }
+        .combosContainer .combosContainer__hero .combosContainer__producto h2 {
+          color: red;
+          padding: 20px  0 8px 0; }
         .combosContainer .combosContainer__hero .combosContainer__producto p {
-          opacity: 0.6;
-          padding: 0;
-          text-align: center;
-          font-size: 20px;
-          margin: 0;
-          max-width: 100%; }
-        .combosContainer .combosContainer__hero .combosContainer__producto .h2 {
-          padding: 8px;
-          font-size: 30px; }
-        .combosContainer .combosContainer__hero .combosContainer__producto .h3 {
-          color: orangered;
-          text-align: center;
-          font-size: 30px;
-          padding-top: 10px;
-          padding-left: 0;
-          padding-bottom: 16px; }
+          padding: 3.2px 50px;
+          opacity: 0.6; }
+        .combosContainer .combosContainer__hero .combosContainer__producto h3 {
+          color: black;
+          text-align: left;
+          font-size: 32px;
+          padding: 1.6px 0 20px 20px; }
         .combosContainer .combosContainer__hero .combosContainer__producto button {
           font-size: 30px;
           background-color: orangered;
@@ -1163,53 +1184,52 @@ body {
 
 /* VERSION MOBILE --------  */
 @media (max-width: 576px) {
-  .desktopCabecera {
-    display: none; }
-  .combosContainer {
-    padding-top: 0;
-    padding-bottom: 0;
+  .tiendasContainer {
+    background-color: white;
+    padding: 50px 10px;
     display: flex;
-    flex-direction: column; }
-    .combosContainer .combosContainer__titulo {
-      font-size: 25px;
-      padding: 15px 0; }
-    .combosContainer .combosContainer__hero {
+    flex-direction: column;
+    text-transform: uppercase; }
+    .tiendasContainer .tiendasContainer__titulo {
+      padding: 0;
+      text-align: center;
+      font-size: 20px; }
+      .tiendasContainer .tiendasContainer__titulo h1 {
+        font-size: 30px;
+        padding-bottom: 20px; }
+    .tiendasContainer .tiendasContainer__hero {
       display: flex;
-      align-items: center;
       flex-direction: column;
-      padding-top: 0em; }
-      .combosContainer .combosContainer__hero .combosContainer__producto {
-        /* width: 100vw; */
+      padding: 0; }
+      .tiendasContainer .tiendasContainer__hero .tiendasContainer__producto {
         width: 100%;
         text-align: center;
-        padding-bottom: 32px; }
-        .combosContainer .combosContainer__hero .combosContainer__producto a img {
-          text-align: center;
-          border-color: white; }
-        .combosContainer .combosContainer__hero .combosContainer__producto p {
-          opacity: 0.6;
-          padding: 0;
-          text-align: center;
-          font-size: 20px;
-          margin: 0;
-          max-width: 100%; }
-        .combosContainer .combosContainer__hero .combosContainer__producto .h2 {
-          padding: 8px;
-          font-size: 30px; }
-        .combosContainer .combosContainer__hero .combosContainer__producto .h3 {
-          color: orangered;
-          text-align: center;
-          font-size: 30px;
-          padding-top: 10px;
+        padding: 0;
+        margin: 0; }
+        .tiendasContainer .tiendasContainer__hero .tiendasContainer__producto h2 {
+          padding: 20px 0;
+          padding-left: 5%;
+          color: red;
+          text-align: center; }
+        .tiendasContainer .tiendasContainer__hero .tiendasContainer__producto ul {
+          display: flex;
           padding-left: 0;
-          padding-bottom: 16px; }
-        .combosContainer .combosContainer__hero .combosContainer__producto button {
-          font-size: 30px;
-          background-color: orangered;
-          padding: 15px;
-          color: black;
-          text-transform: uppercase;
-          font-family: 'Barlow Condensed', sans-serif; } }
+          padding: 10px 0px;
+          justify-content: left; }
+          .tiendasContainer .tiendasContainer__hero .tiendasContainer__producto ul li {
+            padding: 10px;
+            opacity: 0.6;
+            max-width: 100%;
+            list-style: none;
+            text-align: left; }
+        .tiendasContainer .tiendasContainer__hero .tiendasContainer__producto div {
+          display: flex;
+          justify-content: center; }
+          .tiendasContainer .tiendasContainer__hero .tiendasContainer__producto div img {
+            width: 90%;
+            height: 300px;
+            transition: scale 0.25s ease-in-out;
+            padding: 20px 0px; } }
 
 .cateringContainer {
   padding-top: var(--padding-top);
@@ -1279,53 +1299,52 @@ body {
 
 /* VERSION MOBILE --------  */
 @media (max-width: 576px) {
-  .desktopCabecera {
-    display: none; }
-  .combosContainer {
-    padding-top: 0;
-    padding-bottom: 0;
+  .cateringContainer {
+    padding-top: 50px;
+    background-color: white;
+    padding-bottom: 50px;
     display: flex;
-    flex-direction: column; }
-    .combosContainer .combosContainer__titulo {
-      font-size: 25px;
-      padding: 15px 0; }
-    .combosContainer .combosContainer__hero {
+    flex-direction: column;
+    text-transform: uppercase;
+    background-color: #090909;
+    color: white; }
+    .cateringContainer .cateringContainer__titulo {
+      padding: 0px;
+      text-align: center; }
+      .cateringContainer .cateringContainer__titulo h1 {
+        font-size: 30px; }
+    .cateringContainer .cateringContainer__hero {
       display: flex;
-      align-items: center;
-      flex-direction: column;
-      padding-top: 0em; }
-      .combosContainer .combosContainer__hero .combosContainer__producto {
-        /* width: 100vw; */
-        width: 100%;
-        text-align: center;
-        padding-bottom: 32px; }
-        .combosContainer .combosContainer__hero .combosContainer__producto a img {
-          text-align: center;
-          border-color: white; }
-        .combosContainer .combosContainer__hero .combosContainer__producto p {
-          opacity: 0.6;
-          padding: 0;
-          text-align: center;
-          font-size: 20px;
-          margin: 0;
-          max-width: 100%; }
-        .combosContainer .combosContainer__hero .combosContainer__producto .h2 {
-          padding: 8px;
-          font-size: 30px; }
-        .combosContainer .combosContainer__hero .combosContainer__producto .h3 {
-          color: orangered;
-          text-align: center;
-          font-size: 30px;
-          padding-top: 10px;
-          padding-left: 0;
-          padding-bottom: 16px; }
-        .combosContainer .combosContainer__hero .combosContainer__producto button {
-          font-size: 30px;
-          background-color: orangered;
-          padding: 15px;
-          color: black;
-          text-transform: uppercase;
-          font-family: 'Barlow Condensed', sans-serif; } }
+      flex-direction: column; }
+      .cateringContainer .cateringContainer__hero .cateringContainer__bloqueImagen {
+        display: flex;
+        justify-content: center; }
+        .cateringContainer .cateringContainer__hero .cateringContainer__bloqueImagen img {
+          scale: .8; }
+      .cateringContainer .cateringContainer__hero .cateringContainer__bloqueinfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white; }
+      .cateringContainer .cateringContainer__hero ul {
+        padding: 20px 0;
+        line-height: 30px; }
+      .cateringContainer .cateringContainer__hero h2 {
+        color: orangered; }
+      .cateringContainer .cateringContainer__hero img {
+        width: 90%; }
+      .cateringContainer .cateringContainer__hero button {
+        font-size: 21px;
+        font-family: 'Barlow Condensed', sans-serif;
+        text-transform: uppercase;
+        background-color: orangered;
+        padding: 15px;
+        cursor: pointer;
+        border-radius: var(--radio-border);
+        border: 0px; }
+        .cateringContainer .cateringContainer__hero button:hover {
+          opacity: .7; } }
 
 .contactoContainer {
   background: linear-gradient(rgba(0, 0, 0, 0.9), transparent), url("../imagenes/imagenPoliticas.jpg");
@@ -1762,4 +1781,7 @@ body {
       color: white;
       text-decoration: none;
       font-size: 30px;
-      line-height: 45px; } }
+      line-height: 45px; }
+    .footerContainer .footerContainer__contacto .desktopfooter__opcion-marcada {
+      background-color: orangered;
+      padding: 3px; } }
