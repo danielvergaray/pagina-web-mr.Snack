@@ -571,7 +571,7 @@
         display: flex;
         color: white;
         padding: 32px;
-        justify-content: space-between;
+        
         flex-direction: column;
 
         p {
@@ -582,10 +582,12 @@
 
         .variosContainer__hover-imagenes {
             .variosContainer___imagenes {
-
+                text-align: center;
+                padding: 2rem;
                 .varios__desktop-item {
                     width: 7em;
                     height: 8em;
+                    
                 }
             }
         }

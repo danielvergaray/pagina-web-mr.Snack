@@ -102,3 +102,140 @@
 
     }
 }
+
+
+
+/* VERSION MOBILE --------  */
+
+@media (max-width: 576px) {
+
+    .desktopCabecera,
+    .productosSaludables {
+        display: none;
+    }
+
+    .dulcesContainer {
+        // padding-top: var(--padding-top);
+        /*Para que la info no quede debajo de la navBar */
+        display: flex;
+        padding-top: 100px;
+        flex-wrap: wrap;
+        
+    
+    
+        .dulcesContainer__barraIzquierda {
+            
+            display: none;
+        }
+    
+        .dulcesContainer__productos {
+    
+            img {
+                
+                
+                width: 100%;
+                margin-top: 10px;
+                height: 200px;
+                
+    
+            }
+            .imagen230{
+                width: 90%;
+                
+            }
+            
+    
+            .dulcesContainer__primeraFila,
+            .dulcesContainer__segundaFila {
+    
+                padding: 0;
+                margin: 0;
+                width: 100%;
+                
+                flex-wrap: wrap;
+                justify-content: flex-start;
+    
+    
+                .dulcesContainer__productos--item {
+                    
+                    width: 50%;
+                    /* display: grid;
+                    grid-template-rows: 40% 20% 10% 30%; */
+
+                    a{
+                        //grid-row: 1;
+                        text-decoration: none;
+                        color: black;
+                    }
+                    h2 {
+                        
+                        font-size: 20px;
+                       // grid-row: 2;
+                        text-transform: capitalize;
+                       /*  padding: 20px 12px 0px;
+                        margin: 0; */
+                        
+                    }
+    
+                    p {
+                        
+                        font-size: 20px;
+                        color: $rojo;
+                       // grid-row: 3;
+                        //margin: auto;
+                        
+                    }
+    
+                    .dulcesContainer__productos--boton {
+    
+                        justify-content: center;
+                        //grid-row: 4;
+                        margin: auto;
+                        button {
+                            font-size: 20px;
+                            padding: 16px;
+                            
+                            
+                            text-transform: uppercase;
+                            font-family: 'Barlow Condensed', sans-serif;
+                            border-color: $anaranjado;
+    
+                            &:hover {
+                                opacity: 0.8;
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .dulcesContainer__primeraFila {
+                padding-bottom: 0;
+            }
+    
+    
+    
+    
+        }
+    }
+
+
+    .combos__dulces {
+        font-size: 12.8px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        h2 {
+            padding-bottom: 16px;
+        }
+
+        button {
+            font-size: 20px;
+            padding: 15px;
+            border-color: $anaranjado;
+        }
+    }
+
+
+
+}

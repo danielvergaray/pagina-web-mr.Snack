@@ -526,15 +526,17 @@ body {
     display: flex;
     color: white;
     padding: 32px;
-    justify-content: space-between;
     flex-direction: column; }
     .variosContainer p {
       font-size: 24px;
       color: white;
       text-align: center; }
-    .variosContainer .variosContainer__hover-imagenes .variosContainer___imagenes .varios__desktop-item {
-      width: 7em;
-      height: 8em; } }
+    .variosContainer .variosContainer__hover-imagenes .variosContainer___imagenes {
+      text-align: center;
+      padding: 2rem; }
+      .variosContainer .variosContainer__hover-imagenes .variosContainer___imagenes .varios__desktop-item {
+        width: 7em;
+        height: 8em; } }
 
 /* .heroSaludables {
     background:
@@ -628,57 +630,59 @@ body {
   .desktopCabecera,
   .productosSaludables {
     display: none; }
-  .heroSaludables {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), transparent), url("../imagenes/saludables/frutosSecos.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* height: 80vh; */
-    height: 32rem; }
-    .heroSaludables .heroSaludables__texto {
-      position: relative;
+  .saludablesContainer {
+    /*Para que la info no quede debajo de la navBar */
+    display: flex;
+    padding-top: 100px;
+    flex-wrap: wrap; }
+    .saludablesContainer .saludablesContainer__barraIzquierda {
+      display: none; }
+    .saludablesContainer .saludablesContainer__productos img {
+      width: 100%;
+      margin-top: 10px;
+      height: 200px; }
+    .saludablesContainer .saludablesContainer__productos .saludablesContainer__primeraFila,
+    .saludablesContainer .saludablesContainer__productos .saludablesContainer__segundaFila {
       padding: 0;
-      top: 40%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 100%; }
-      .heroSaludables .heroSaludables__texto p {
-        line-height: normal;
-        font-size: 20px;
-        width: 80%; }
-  .favoritos-carrusel-mobile .contenedor-saludables {
-    background-color: gray;
-    height: 32rem;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 40px;
-    padding-bottom: 40px; }
-    .favoritos-carrusel-mobile .contenedor-saludables .carousel-saludables-titulo {
-      position: relative;
-      bottom: 10px;
-      height: fit-content; }
-      .favoritos-carrusel-mobile .contenedor-saludables .carousel-saludables-titulo h2 {
-        font-size: 2.5rem;
-        color: black;
-        text-align: center; }
-    .favoritos-carrusel-mobile .contenedor-saludables .carousel-control-prev,
-    .favoritos-carrusel-mobile .contenedor-saludables .carousel-control-next {
-      scale: 1.5;
-      font-weight: 1000; }
-    .favoritos-carrusel-mobile .contenedor-saludables .carousel-saludables {
-      margin: auto;
-      padding-top: 50px; }
-      .favoritos-carrusel-mobile .contenedor-saludables .carousel-saludables .carousel-item {
-        position: absolute;
-        text-align: center; }
-        .favoritos-carrusel-mobile .contenedor-saludables .carousel-saludables .carousel-item .producto-saludables-nombre {
-          color: black;
-          font-size: 1.5rem;
-          padding-top: 10px; }
-        .favoritos-carrusel-mobile .contenedor-saludables .carousel-saludables .carousel-item .img-carousel {
-          width: 140px;
-          height: 180px; }
+      margin: 0;
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: flex-start; }
+      .saludablesContainer .saludablesContainer__productos .saludablesContainer__primeraFila .saludablesContainer__productos--item,
+      .saludablesContainer .saludablesContainer__productos .saludablesContainer__segundaFila .saludablesContainer__productos--item {
+        width: 50%;
+        /* display: grid;
+                    grid-template-rows: 40% 20% 10% 30%; */ }
+        .saludablesContainer .saludablesContainer__productos .saludablesContainer__primeraFila .saludablesContainer__productos--item a,
+        .saludablesContainer .saludablesContainer__productos .saludablesContainer__segundaFila .saludablesContainer__productos--item a {
+          text-decoration: none;
+          color: black; }
+        .saludablesContainer .saludablesContainer__productos .saludablesContainer__primeraFila .saludablesContainer__productos--item h2,
+        .saludablesContainer .saludablesContainer__productos .saludablesContainer__segundaFila .saludablesContainer__productos--item h2 {
+          font-size: 20px;
+          text-transform: capitalize;
+          /*  padding: 20px 12px 0px;
+                        margin: 0; */ }
+        .saludablesContainer .saludablesContainer__productos .saludablesContainer__primeraFila .saludablesContainer__productos--item p,
+        .saludablesContainer .saludablesContainer__productos .saludablesContainer__segundaFila .saludablesContainer__productos--item p {
+          font-size: 20px;
+          color: red; }
+        .saludablesContainer .saludablesContainer__productos .saludablesContainer__primeraFila .saludablesContainer__productos--item .saludablesContainer__productos--boton,
+        .saludablesContainer .saludablesContainer__productos .saludablesContainer__segundaFila .saludablesContainer__productos--item .saludablesContainer__productos--boton {
+          justify-content: center;
+          margin: auto; }
+          .saludablesContainer .saludablesContainer__productos .saludablesContainer__primeraFila .saludablesContainer__productos--item .saludablesContainer__productos--boton button,
+          .saludablesContainer .saludablesContainer__productos .saludablesContainer__segundaFila .saludablesContainer__productos--item .saludablesContainer__productos--boton button {
+            font-size: 20px;
+            padding: 16px;
+            text-transform: uppercase;
+            font-family: 'Barlow Condensed', sans-serif;
+            border-color: orangered; }
+            .saludablesContainer .saludablesContainer__productos .saludablesContainer__primeraFila .saludablesContainer__productos--item .saludablesContainer__productos--boton button:hover,
+            .saludablesContainer .saludablesContainer__productos .saludablesContainer__segundaFila .saludablesContainer__productos--item .saludablesContainer__productos--boton button:hover {
+              opacity: 0.8; }
+    .saludablesContainer .saludablesContainer__productos .saludablesContainer__primeraFila {
+      padding-bottom: 0; }
   .combos__saludables {
     font-size: 12.8px;
     display: flex;
@@ -756,6 +760,78 @@ body {
   .dulcesContainer .dulcesContainer__productos .dulcesContainer__primeraFila {
     padding-bottom: 0; }
 
+/* VERSION MOBILE --------  */
+@media (max-width: 576px) {
+  .desktopCabecera,
+  .productosSaludables {
+    display: none; }
+  .dulcesContainer {
+    /*Para que la info no quede debajo de la navBar */
+    display: flex;
+    padding-top: 100px;
+    flex-wrap: wrap; }
+    .dulcesContainer .dulcesContainer__barraIzquierda {
+      display: none; }
+    .dulcesContainer .dulcesContainer__productos img {
+      width: 100%;
+      margin-top: 10px;
+      height: 200px; }
+    .dulcesContainer .dulcesContainer__productos .imagen230 {
+      width: 90%; }
+    .dulcesContainer .dulcesContainer__productos .dulcesContainer__primeraFila,
+    .dulcesContainer .dulcesContainer__productos .dulcesContainer__segundaFila {
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: flex-start; }
+      .dulcesContainer .dulcesContainer__productos .dulcesContainer__primeraFila .dulcesContainer__productos--item,
+      .dulcesContainer .dulcesContainer__productos .dulcesContainer__segundaFila .dulcesContainer__productos--item {
+        width: 50%;
+        /* display: grid;
+                    grid-template-rows: 40% 20% 10% 30%; */ }
+        .dulcesContainer .dulcesContainer__productos .dulcesContainer__primeraFila .dulcesContainer__productos--item a,
+        .dulcesContainer .dulcesContainer__productos .dulcesContainer__segundaFila .dulcesContainer__productos--item a {
+          text-decoration: none;
+          color: black; }
+        .dulcesContainer .dulcesContainer__productos .dulcesContainer__primeraFila .dulcesContainer__productos--item h2,
+        .dulcesContainer .dulcesContainer__productos .dulcesContainer__segundaFila .dulcesContainer__productos--item h2 {
+          font-size: 20px;
+          text-transform: capitalize;
+          /*  padding: 20px 12px 0px;
+                        margin: 0; */ }
+        .dulcesContainer .dulcesContainer__productos .dulcesContainer__primeraFila .dulcesContainer__productos--item p,
+        .dulcesContainer .dulcesContainer__productos .dulcesContainer__segundaFila .dulcesContainer__productos--item p {
+          font-size: 20px;
+          color: red; }
+        .dulcesContainer .dulcesContainer__productos .dulcesContainer__primeraFila .dulcesContainer__productos--item .dulcesContainer__productos--boton,
+        .dulcesContainer .dulcesContainer__productos .dulcesContainer__segundaFila .dulcesContainer__productos--item .dulcesContainer__productos--boton {
+          justify-content: center;
+          margin: auto; }
+          .dulcesContainer .dulcesContainer__productos .dulcesContainer__primeraFila .dulcesContainer__productos--item .dulcesContainer__productos--boton button,
+          .dulcesContainer .dulcesContainer__productos .dulcesContainer__segundaFila .dulcesContainer__productos--item .dulcesContainer__productos--boton button {
+            font-size: 20px;
+            padding: 16px;
+            text-transform: uppercase;
+            font-family: 'Barlow Condensed', sans-serif;
+            border-color: orangered; }
+            .dulcesContainer .dulcesContainer__productos .dulcesContainer__primeraFila .dulcesContainer__productos--item .dulcesContainer__productos--boton button:hover,
+            .dulcesContainer .dulcesContainer__productos .dulcesContainer__segundaFila .dulcesContainer__productos--item .dulcesContainer__productos--boton button:hover {
+              opacity: 0.8; }
+    .dulcesContainer .dulcesContainer__productos .dulcesContainer__primeraFila {
+      padding-bottom: 0; }
+  .combos__dulces {
+    font-size: 12.8px;
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+    .combos__dulces h2 {
+      padding-bottom: 16px; }
+    .combos__dulces button {
+      font-size: 20px;
+      padding: 15px;
+      border-color: orangered; } }
+
 .saladosContainer {
   padding-top: var(--padding-top);
   /*Para que la info no quede debajo de la navBar */
@@ -827,6 +903,76 @@ body {
             opacity: 0.8; }
   .saladosContainer .saladosContainer__productos .saladosContainer__primeraFila {
     padding-bottom: 0; }
+
+/* VERSION MOBILE --------  */
+@media (max-width: 576px) {
+  .desktopCabecera,
+  .productosSaludables {
+    display: none; }
+  .saladosContainer {
+    /*Para que la info no quede debajo de la navBar */
+    display: flex;
+    padding-top: 100px;
+    flex-wrap: wrap; }
+    .saladosContainer .saladosContainer__barraIzquierda {
+      display: none; }
+    .saladosContainer .saladosContainer__productos img {
+      width: 100%;
+      margin-top: 10px;
+      height: 200px; }
+    .saladosContainer .saladosContainer__productos .saladosContainer__primeraFila,
+    .saladosContainer .saladosContainer__productos .saladosContainer__segundaFila {
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: flex-start; }
+      .saladosContainer .saladosContainer__productos .saladosContainer__primeraFila .saladosContainer__productos--item,
+      .saladosContainer .saladosContainer__productos .saladosContainer__segundaFila .saladosContainer__productos--item {
+        width: 50%;
+        /* display: grid;
+                    grid-template-rows: 40% 20% 10% 30%; */ }
+        .saladosContainer .saladosContainer__productos .saladosContainer__primeraFila .saladosContainer__productos--item a,
+        .saladosContainer .saladosContainer__productos .saladosContainer__segundaFila .saladosContainer__productos--item a {
+          text-decoration: none;
+          color: black; }
+        .saladosContainer .saladosContainer__productos .saladosContainer__primeraFila .saladosContainer__productos--item h2,
+        .saladosContainer .saladosContainer__productos .saladosContainer__segundaFila .saladosContainer__productos--item h2 {
+          font-size: 20px;
+          text-transform: capitalize;
+          /*  padding: 20px 12px 0px;
+                        margin: 0; */ }
+        .saladosContainer .saladosContainer__productos .saladosContainer__primeraFila .saladosContainer__productos--item p,
+        .saladosContainer .saladosContainer__productos .saladosContainer__segundaFila .saladosContainer__productos--item p {
+          font-size: 20px;
+          color: red; }
+        .saladosContainer .saladosContainer__productos .saladosContainer__primeraFila .saladosContainer__productos--item .saladosContainer__productos--boton,
+        .saladosContainer .saladosContainer__productos .saladosContainer__segundaFila .saladosContainer__productos--item .saladosContainer__productos--boton {
+          justify-content: center;
+          margin: auto; }
+          .saladosContainer .saladosContainer__productos .saladosContainer__primeraFila .saladosContainer__productos--item .saladosContainer__productos--boton button,
+          .saladosContainer .saladosContainer__productos .saladosContainer__segundaFila .saladosContainer__productos--item .saladosContainer__productos--boton button {
+            font-size: 20px;
+            padding: 16px;
+            text-transform: uppercase;
+            font-family: 'Barlow Condensed', sans-serif;
+            border-color: orangered; }
+            .saladosContainer .saladosContainer__productos .saladosContainer__primeraFila .saladosContainer__productos--item .saladosContainer__productos--boton button:hover,
+            .saladosContainer .saladosContainer__productos .saladosContainer__segundaFila .saladosContainer__productos--item .saladosContainer__productos--boton button:hover {
+              opacity: 0.8; }
+    .saladosContainer .saladosContainer__productos .saladosContainer__primeraFila {
+      padding-bottom: 0; }
+  .combos__salados {
+    font-size: 12.8px;
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+    .combos__salados h2 {
+      padding-bottom: 16px; }
+    .combos__salados button {
+      font-size: 20px;
+      padding: 15px;
+      border-color: orangered; } }
 
 .combosContainer {
   padding-top: var(--padding-top);
