@@ -137,6 +137,7 @@
                 }
             }
         }
+
         h3 {
             padding-top: 50px;
             font-size: 25px;
@@ -151,7 +152,7 @@
                 scale: 1.2;
             }
 
-            
+
         }
 
         img {
@@ -315,17 +316,9 @@
     #carouselExampleCaptions {
         .carousel-inner {
             .carousel1 {
-                /* height: 80vh; */
+
                 height: 32rem;
-
-                // .carousel-caption {
-                //     font-size: 2rem;
-                //     /* No modificar*/
-                // }
-
                 .texto-principal {
-                    // padding-bottom: 100px;
-                    // margin: 0;
                     position: absolute;
                     padding: 0;
                     top: 0;
@@ -344,7 +337,6 @@
             }
 
             .carousel2 {
-                /* height: 80vh; */
                 height: 32rem;
 
                 .carousel-caption {
@@ -353,8 +345,6 @@
                 }
 
                 .texto-principal-saludables {
-                    // padding-bottom: 100px;
-                    // margin: 0;
                     position: absolute;
                     padding: 0;
                     top: 0;
@@ -395,7 +385,6 @@
 
     }
 
-
     .favoritos-carrusel-mobile {
         display: block;
 
@@ -406,11 +395,7 @@
         .carousel-contenedor-index {
             background-color: $negro;
             display: flex;
-            /* align-items: center; */
-            /* justify-content: center; */
             flex-direction: column;
-            /* padding-top: 40px; */
-            /* padding-bottom: 40px; */
             height: 32rem;
             text-align: center;
 
@@ -421,8 +406,6 @@
                 top: 10%;
 
                 h2 {
-
-
                     color: $blanco;
                     font-size: 40px;
                 }
@@ -436,6 +419,7 @@
                     color: white;
                     font-size: 1.5rem;
                     padding-top: 10px;
+                    text-transform: uppercase;
                 }
 
                 .img-carousel {
@@ -451,8 +435,6 @@
         }
 
     }
-
-
 
     .index-flechaIzquierda {
         position: absolute;
@@ -495,28 +477,29 @@
                     /* width: 80vw; */
                     color: white;
                 }
-                div{
+
+                div {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    padding-top:50%;
-                    
-                    
-                    a{
+                    padding-top: 50%;
+
+
+                    a {
                         button {
-                            padding: 16px;
-                            font-size: 15px;
-                            
+                            padding: 15px;
+                            font-size: 21px;
+
                             letter-spacing: 1.6px;
                             background-color: $anaranjado;
                             border: none;
                             color: $blanco;
-                            
+
                             border-radius: var(--radio-border);
                             width: fit-content;
                         }
                     }
-                    
+
                 }
             }
 
@@ -537,28 +520,29 @@
                     color: white;
                     text-align: center;
                 }
-                div{
+
+                div {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    padding-top:50%;
-                    
-                    
-                    a{
+                    padding-top: 50%;
+
+
+                    a {
                         button {
-                            padding: 16px;
-                            font-size: 15px;
-                            
+                            padding: 15px;
+                            font-size: 21px;
+
                             letter-spacing: 1.6px;
                             background-color: $anaranjado;
                             border: none;
                             color: $blanco;
-                            
+
                             border-radius: var(--radio-border);
                             width: fit-content;
                         }
                     }
-                    
+
                 }
             }
         }
@@ -571,7 +555,7 @@
         display: flex;
         color: white;
         padding: 32px;
-        
+
         flex-direction: column;
 
         p {
@@ -584,10 +568,11 @@
             .variosContainer___imagenes {
                 text-align: center;
                 padding: 2rem;
+
                 .varios__desktop-item {
                     width: 7em;
                     height: 8em;
-                    
+
                 }
             }
         }

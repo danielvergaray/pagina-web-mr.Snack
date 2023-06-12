@@ -244,7 +244,7 @@
                 }
 
                 input {
-                    font-size: 17px;
+                    font-size: 20px;
                     margin: 20px;
                     padding: 8px;
                     font-family: 'Barlow Condensed', sans-serif;
@@ -266,16 +266,14 @@
 
             .recuadroMensaje {
                 height: fit-content;
-                grid-column: 1;
-                width: fit-content;
                 padding-bottom: 20px;
                 padding: 10px;
                 padding-left: 25px;
+                font-size: 20px;
 
                 .input-mensaje {
                     height: fit-content;
-                    width: fit-content;
-                    
+                    width: 100%;
                     font-size: 20px;
                     padding: 8px;
                     padding-bottom: 90px;

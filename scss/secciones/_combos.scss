@@ -130,9 +130,9 @@
                 }
     
                 p {
-                    padding: 3.2px 50px;
+                    padding: 5px 0px;
                     opacity: 0.6;
-                   
+                    max-width: 100%;
                 }
     
                 h3 {
@@ -145,10 +145,10 @@
                 }
 
                 button {
-                    font-size: 30px;
+                    font-size: 21px;
                     background-color: $anaranjado;
                     padding: 15px;
-                    color: $negro;
+                    color: $blanco;
                     text-transform: uppercase;
                     font-family: 'Barlow Condensed', sans-serif;
                 }
