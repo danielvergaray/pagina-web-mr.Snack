@@ -10,7 +10,7 @@
     background-size: cover;
     height: 100vh;
     display: flex;
-    
+
 
 
     .deliveryContainer__info {
@@ -24,7 +24,8 @@
         flex-direction: column;
         top: 35%;
 
-        h1, h2 {
+        h1,
+        h2 {
             margin: 0;
         }
 
@@ -40,13 +41,15 @@
             text-align: center;
             padding-top: 20px;
         }
-        .deliveryContainer__botones{
+
+        .deliveryContainer__botones {
             padding: 50px 100px;
-            
+
             width: 50%;
             display: flex;
             justify-content: space-around;
             margin: 0;
+
             button {
                 font-size: 21px;
                 font-family: 'Barlow Condensed', sans-serif;
@@ -56,7 +59,7 @@
                 cursor: pointer;
                 border-radius: var(--radio-border);
                 border: 0px;
-    
+
                 &:hover {
                     opacity: .7;
                 }
@@ -65,5 +68,92 @@
     }
 
 
+}
+
+
+
+
+@media (max-width: 576px) {
+
+    .deliveryContainer {
+        padding: 50px 60px;
+
+        background:
+            linear-gradient(rgba(0, 0, 0, 0.6), transparent),
+            url("../imagenes/fondoDelivery.jpg");
+        background-position: center center;
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+
+
+
+        .deliveryContainer__info {
+            letter-spacing: 5px;
+            font-family: 'Barlow Condensed', sans-serif;
+            color: white;
+            font-size: 30px;
+            text-transform: uppercase;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+
+            h1,
+            h2 {
+                margin: 0;
+                width: 100%;
+                text-align: center;
+                font-size: 30px;
+            }
+
+            p {
+                opacity: .7;
+                margin: 0;
+                width: 100%;
+                text-align: center;
+                font-size: 30px;
+                padding: 0 30px;
+            }
+
+            p:nth-child(4) {
+                font-size: 25px;
+                width: 100%;
+                text-align: center;
+                padding: 20px 30px;
+            }
+
+            .deliveryContainer__botones {
+                padding: 60px 20px;
+
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                margin: 0;
+
+                button {
+                    font-size: 21px;
+                    font-family: 'Barlow Condensed', sans-serif;
+                    text-transform: uppercase;
+                    background-color: $anaranjado;
+                    padding: 15px;
+                    cursor: pointer;
+                    border-radius: var(--radio-border);
+                    border: 0px;
+
+                    &:hover {
+                        opacity: .7;
+                    }
+                }
+            }
+        }
+
+
     }
 
+
+
+}

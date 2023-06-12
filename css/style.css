@@ -1448,43 +1448,107 @@ body {
 /* VERSION MOBILE --------  */
 @media (max-width: 576px) {
   .contactoContainer {
-    background-image: url("../imagenes/contacto/fondo-mobile.jpg");
-    display: flex;
-    flex-direction: column;
-    padding: 30px; }
-    .contactoContainer .contactoContainer__columnaIzquierda {
-      text-align: left;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), transparent), url("../imagenes/imagenPoliticas.jpg");
+    background-position: 70%;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .contactoContainer .heroContacto {
+      padding: 50px 40px; }
+      .contactoContainer .heroContacto div {
+        display: flex;
+        padding-left: 0px;
+        justify-content: left; }
+        .contactoContainer .heroContacto div h1 {
+          padding-left: 0;
+          padding-bottom: 0px;
+          padding-top: 0;
+          text-align: justify;
+          width: 100%;
+          color: white;
+          font-size: 25px;
+          font-family: 'Barlow Condensed', sans-serif; }
+    .contactoContainer .contactoContainer__infoUsuario {
+      text-align: center;
+      padding: 10px 0px 20px 0px;
       color: white;
-      font-size: 25px;
-      padding: 50px; }
-    .contactoContainer .contactoContainer__central {
-      padding: 32px 0;
-      font-family: 'Barlow Condensed', sans-serif; }
-      .contactoContainer .contactoContainer__central .contactoContainer__columnaCentral {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .contactoContainer .contactoContainer__infoUsuario h2 {
+        font-size: 25px;
+        text-align: center;
+        padding-left: 0px;
+        font-family: 'Barlow Condensed', sans-serif;
         width: 100%;
-        padding: 50px; }
-        .contactoContainer .contactoContainer__central .contactoContainer__columnaCentral h1 {
-          font-size: 30px;
-          padding-top: 15px; }
-        .contactoContainer .contactoContainer__central .contactoContainer__columnaCentral label {
-          padding-top: 18px;
-          font-size: 25px; }
-        .contactoContainer .contactoContainer__central .contactoContainer__columnaCentral input {
-          font-size: 15px;
-          margin: 10px;
+        color: white; }
+      .contactoContainer .contactoContainer__infoUsuario .contactoContainer__datos {
+        padding: 20px;
+        background-color: transparent; }
+        .contactoContainer .contactoContainer__infoUsuario .contactoContainer__datos .infoUsuario {
+          text-align: center;
+          width: 100%;
+          padding: 0;
+          display: flex;
+          flex-direction: column;
+          font-size: 20px; }
+        .contactoContainer .contactoContainer__infoUsuario .contactoContainer__datos input {
+          font-size: 17px;
+          margin: 20px;
           padding: 8px;
           font-family: 'Barlow Condensed', sans-serif;
-          text-transform: capitalize; }
-    .contactoContainer .contactoContainer__columnaDerecha {
-      font-size: 25px;
-      line-height: 35px;
-      text-align: left; }
-      .contactoContainer .contactoContainer__columnaDerecha h2 {
-        font-size: 20px;
-        font-size: 30px; }
-      .contactoContainer .contactoContainer__columnaDerecha h3 {
-        padding: 16px 0;
-        font-size: 30px; } }
+          text-transform: uppercase;
+          border: 0;
+          border-bottom: 1px solid white;
+          background-color: transparent; }
+          .contactoContainer .contactoContainer__infoUsuario .contactoContainer__datos input::placeholder {
+            color: black;
+            text-transform: capitalize;
+            font-family: 'Barlow Condensed', sans-serif; }
+      .contactoContainer .contactoContainer__infoUsuario .recuadroMensaje {
+        height: fit-content;
+        grid-column: 1;
+        width: fit-content;
+        padding-bottom: 20px;
+        padding: 10px;
+        padding-left: 25px; }
+        .contactoContainer .contactoContainer__infoUsuario .recuadroMensaje .input-mensaje {
+          height: fit-content;
+          width: fit-content;
+          font-size: 20px;
+          padding: 8px;
+          padding-bottom: 90px;
+          margin: 20px;
+          font-family: 'Barlow Condensed', sans-serif;
+          text-transform: uppercase;
+          border: 0;
+          border-bottom: 1px solid white;
+          background-color: transparent; }
+          .contactoContainer .contactoContainer__infoUsuario .recuadroMensaje .input-mensaje::placeholder {
+            color: black;
+            text-transform: capitalize;
+            font-family: 'Barlow Condensed', sans-serif; }
+      .contactoContainer .contactoContainer__infoUsuario .fila1 {
+        grid-row: 1; }
+      .contactoContainer .contactoContainer__infoUsuario .fila2 {
+        grid-row: 2; }
+    .contactoContainer div {
+      display: flex;
+      justify-content: left;
+      padding-left: 32px; }
+      .contactoContainer div .botonFormulario {
+        font-size: 21px;
+        font-family: 'Barlow Condensed', sans-serif;
+        text-transform: uppercase;
+        color: white;
+        background-color: orangered;
+        border-radius: var(--radio-border);
+        border: 0px;
+        padding: 15px;
+        cursor: pointer;
+        margin-left: 30px;
+        margin-bottom: 40px; }
+        .contactoContainer div .botonFormulario:hover {
+          opacity: .5; } }
 
 .deliveryContainer {
   padding-top: var(--padding-top);
@@ -1504,7 +1568,8 @@ body {
     margin: auto;
     flex-direction: column;
     top: 35%; }
-    .deliveryContainer .deliveryContainer__info h1, .deliveryContainer .deliveryContainer__info h2 {
+    .deliveryContainer .deliveryContainer__info h1,
+    .deliveryContainer .deliveryContainer__info h2 {
       margin: 0; }
     .deliveryContainer .deliveryContainer__info p {
       opacity: .7;
@@ -1532,6 +1597,62 @@ body {
         .deliveryContainer .deliveryContainer__info .deliveryContainer__botones button:hover {
           opacity: .7; }
 
+@media (max-width: 576px) {
+  .deliveryContainer {
+    padding: 50px 60px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), transparent), url("../imagenes/fondoDelivery.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex; }
+    .deliveryContainer .deliveryContainer__info {
+      letter-spacing: 5px;
+      font-family: 'Barlow Condensed', sans-serif;
+      color: white;
+      font-size: 30px;
+      text-transform: uppercase;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      width: 100%;
+      flex-direction: column; }
+      .deliveryContainer .deliveryContainer__info h1,
+      .deliveryContainer .deliveryContainer__info h2 {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 30px; }
+      .deliveryContainer .deliveryContainer__info p {
+        opacity: .7;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 30px;
+        padding: 0 30px; }
+      .deliveryContainer .deliveryContainer__info p:nth-child(4) {
+        font-size: 25px;
+        width: 100%;
+        text-align: center;
+        padding: 20px 30px; }
+      .deliveryContainer .deliveryContainer__info .deliveryContainer__botones {
+        padding: 60px 20px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin: 0; }
+        .deliveryContainer .deliveryContainer__info .deliveryContainer__botones button {
+          font-size: 21px;
+          font-family: 'Barlow Condensed', sans-serif;
+          text-transform: uppercase;
+          background-color: orangered;
+          padding: 15px;
+          cursor: pointer;
+          border-radius: var(--radio-border);
+          border: 0px; }
+          .deliveryContainer .deliveryContainer__info .deliveryContainer__botones button:hover {
+            opacity: .7; } }
+
 .heroPolitica {
   background: linear-gradient(rgba(0, 0, 0, 0.9), transparent), url("../imagenes/imagenPoliticas.jpg");
   background-position: 45%;
@@ -1558,6 +1679,33 @@ body {
   .politica h2 {
     font-size: 20px;
     margin-bottom: 8px; }
+
+@media (max-width: 576px) {
+  .heroPolitica {
+    background: linear-gradient(rgba(0, 0, 0, 0.9), transparent), url("../imagenes/imagenPoliticas.jpg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 15rem; }
+    .heroPolitica h1 {
+      color: black;
+      font-size: 30px;
+      padding: 150px 20px;
+      text-transform: uppercase;
+      margin: 0;
+      width: 50%; }
+  .politica {
+    padding: 20px 20px;
+    margin-left: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px; }
+    .politica p {
+      font-weight: 300;
+      line-height: 1.6;
+      margin-bottom: 25px; }
+    .politica h2 {
+      font-size: 18px;
+      margin-bottom: 8px; } }
 
 .PagosContainer {
   padding-top: var(--padding-top);
@@ -1597,6 +1745,47 @@ body {
         padding: 20px 0 50px; }
         .PagosContainer .PagosContainer__hero .PagosContainer__producto .PagosContainer__tarjetas .PagosContainer__tarjetas-logo {
           font-size: 30px; }
+
+@media (max-width: 576px) {
+  .PagosContainer {
+    padding: 50px 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase; }
+    .PagosContainer .PagosContainer__titulo {
+      padding: 0;
+      text-align: center;
+      font-size: 20px; }
+      .PagosContainer .PagosContainer__titulo h1 {
+        font-size: 30px;
+        padding-bottom: 20px; }
+    .PagosContainer .PagosContainer__hero {
+      display: flex;
+      padding: 32px;
+      flex-wrap: wrap; }
+      .PagosContainer .PagosContainer__hero .PagosContainer__producto {
+        width: 250px;
+        border: 1px solid #d5d5d5; }
+        .PagosContainer .PagosContainer__hero .PagosContainer__producto div {
+          text-align: center;
+          padding: 40px 0 50px; }
+          .PagosContainer .PagosContainer__hero .PagosContainer__producto div i {
+            font-size: 30px; }
+        .PagosContainer .PagosContainer__hero .PagosContainer__producto p {
+          text-transform: capitalize;
+          font-size: 20px;
+          font-family: 'Lato', sans-serif;
+          font-weight: 500;
+          text-align: center;
+          margin: 0 40px;
+          padding-bottom: 50px; }
+        .PagosContainer .PagosContainer__hero .PagosContainer__producto .PagosContainer__tarjetas {
+          display: flex;
+          justify-content: space-around;
+          padding: 20px 0 50px; }
+          .PagosContainer .PagosContainer__hero .PagosContainer__producto .PagosContainer__tarjetas .PagosContainer__tarjetas-logo {
+            font-size: 30px; } }
 
 .productoContainer {
   padding-top: var(--padding-top);
