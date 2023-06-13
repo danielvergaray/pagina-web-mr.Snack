@@ -1,17 +1,4 @@
-/* .heroSaludables {
-    background:
-        linear-gradient(rgba(0, 0, 0, 0.9), transparent),
-        url("../imagenes/saludables/frutosSecos.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* height: 100vh; */
-    /* height: 15rem;
-    padding-top: 100px; */
-    /*Para que la info no quede debajo de la navBar */
 
-    
- // } 
 
 .saludablesContainer {
     // padding-top: var(--padding-top);
@@ -256,6 +243,9 @@
     
             .saludablesContainer__primeraFila {
                 padding-bottom: 0;
+            }
+            .saludablesContainer__segundaFila {
+                padding-bottom: 50px;
             }
     
     

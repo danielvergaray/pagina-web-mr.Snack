@@ -85,7 +85,7 @@
 
         background-repeat: no-repeat;
         background-size: cover;
-        height: 550px;
+        height: 110vh;
         display: flex;
 
 
@@ -140,7 +140,6 @@
                     text-transform: uppercase;
                     background-color: $anaranjado;
                     padding: 15px;
-                    cursor: pointer;
                     border-radius: var(--radio-border);
                     border: 0px;
                     color: white;
