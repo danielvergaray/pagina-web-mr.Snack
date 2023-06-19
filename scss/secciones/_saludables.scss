@@ -3,11 +3,9 @@
 .saludablesContainer {
     // padding-top: var(--padding-top);
     /*Para que la info no quede debajo de la navBar */
-    display: flex;
+    
     padding-top: 100px;
     
-
-
     .saludablesContainer__barraIzquierda {
         
         padding-top: 50px;
@@ -100,6 +98,7 @@
         .saludablesContainer__primeraFila {
             padding-bottom: 0;
         }
+        
 
 
 

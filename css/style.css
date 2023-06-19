@@ -539,7 +539,6 @@ body {
 
 .saludablesContainer {
   /*Para que la info no quede debajo de la navBar */
-  display: flex;
   padding-top: 100px; }
   .saludablesContainer .saludablesContainer__barraIzquierda {
     padding-top: 50px;
@@ -722,7 +721,7 @@ body {
     .dulcesContainer .dulcesContainer__productos .dulcesContainer__primeraFila .dulcesContainer__productos--item,
     .dulcesContainer .dulcesContainer__productos .dulcesContainer__segundaFila .dulcesContainer__productos--item {
       display: grid;
-      grid-template-rows: 40% 20% 10% 30%; }
+      grid-template-rows: 50% 20% 10% 20%; }
       .dulcesContainer .dulcesContainer__productos .dulcesContainer__primeraFila .dulcesContainer__productos--item a,
       .dulcesContainer .dulcesContainer__productos .dulcesContainer__segundaFila .dulcesContainer__productos--item a {
         grid-row: 1;
@@ -739,8 +738,8 @@ body {
       .dulcesContainer .dulcesContainer__productos .dulcesContainer__segundaFila .dulcesContainer__productos--item p {
         font-size: 20px;
         color: red;
-        grid-row: 3;
-        margin: auto; }
+        margin: auto;
+        grid-row: 3; }
       .dulcesContainer .dulcesContainer__productos .dulcesContainer__primeraFila .dulcesContainer__productos--item .dulcesContainer__productos--boton,
       .dulcesContainer .dulcesContainer__productos .dulcesContainer__segundaFila .dulcesContainer__productos--item .dulcesContainer__productos--boton {
         justify-content: center;
@@ -1640,7 +1639,8 @@ body {
         padding: 15px;
         cursor: pointer;
         border-radius: var(--radio-border);
-        border: 0px; }
+        border: 0px;
+        color: white; }
         .deliveryContainer .deliveryContainer__info .deliveryContainer__botones button:hover {
           opacity: .7; }
 
@@ -2137,7 +2137,8 @@ body {
         cursor: pointer;
         text-transform: uppercase;
         font-family: 'Barlow Condensed', sans-serif;
-        border-color: orangered; }
+        border-color: orangered;
+        color: white; }
         .producto__recomendaciones .producto__recomendaciones--container .producto__recomendaciones--item .producto__productos--boton button:hover {
           opacity: 0.8; }
 

@@ -50,7 +50,7 @@
                 
                 @extend .propiedades-productos-items;
                 display: grid;
-                grid-template-rows: 40% 20% 10% 30%;
+                grid-template-rows: 50% 20% 10% 20%;
                 a{
                     grid-row: 1;
                     text-decoration: none;
@@ -70,8 +70,8 @@
                     
                     font-size: 20px;
                     color: $rojo;
-                    grid-row: 3;
                     margin: auto;
+                    grid-row: 3;
                     
                 }
 
